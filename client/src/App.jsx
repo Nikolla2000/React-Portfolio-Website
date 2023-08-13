@@ -1,10 +1,11 @@
 import './App.css'
+import TakeawayPage from './Pages/TakeawayPage/TakeawayPage'
 
 function App() {
 
   return (
     <>
-      Test
+      <TakeawayPage/>
     </>
   )
 }
