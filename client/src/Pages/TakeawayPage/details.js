@@ -1,0 +1,1 @@
+const details = [0,1];
