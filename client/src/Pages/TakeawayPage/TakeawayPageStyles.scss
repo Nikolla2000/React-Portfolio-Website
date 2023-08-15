@@ -1,4 +1,21 @@
 //Detail Component 
 .detail-wrapper {
     display: flex;
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+    svg {
+        display: flex;
+        align-content: center;
+        height: 40px;
+        justify-content: center;
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
