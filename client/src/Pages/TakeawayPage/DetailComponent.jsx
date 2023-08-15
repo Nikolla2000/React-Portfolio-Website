@@ -1,10 +1,15 @@
-const DetailComponent = () => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
+
+const DetailComponent = (props) => {
     return (
         <div className="detail-wrapper">
-            <img src="#"/>
+            <div className="icon">
+             <FontAwesomeIcon icon={faBagShopping} />
+            </div>
             <div className="details">
-                <p className="detail-title">Detail Title</p>
-                <p className="detail">Lorem ipsum dolor sin amet</p>
+                <p className="detail-title">{props.detailTitle}</p>
+                <p className="detail">{props.detail}</p>
             </div>
         </div>
     )
