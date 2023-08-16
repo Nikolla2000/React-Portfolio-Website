@@ -30,4 +30,11 @@ const orderDetails = [
     }
 ];
 
+const orderItems = [
+    {
+        item: 'Capricossa',
+        quantity: 2,
+        price: 9.99
+    }
+]
 export default orderDetails
