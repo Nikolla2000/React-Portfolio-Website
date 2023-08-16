@@ -18,6 +18,9 @@
                 <h1>{orderStatus}</h1>
                 <h6>{subOrderStatus}</h6>
                 <ProgressBar status={orderStatus}/>
+                <div className="pizza-img">
+                    <img src='../../src/assets/images/menu-pizzas.png'/>
+                </div>
                 {orderDetails && orderDetails.map((orderDetail, index) => { return (
                     <DetailComponent 
                         detailTitle={orderDetail.detailTitle} 
