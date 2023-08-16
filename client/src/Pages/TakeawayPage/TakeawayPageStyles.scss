@@ -1,4 +1,34 @@
-//Detail Component 
+//Progress Bar
+.progress-bar{
+    background-color: rgb(194, 194, 194);
+    height: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+
+    .separate-line {
+        width: 5px;
+        height: 100%;
+        background-color: #fff;
+    }
+}
+
+.waiting {
+    background-image: linear-gradient(to right,rgb(20, 172, 20) 33%, rgba(0,0,0,0) 20%);
+}
+
+.preparing {
+    background-image: linear-gradient(to right,rgb(20, 172, 20) 66.7%, rgba(0,0,0,0) 20%);
+}
+
+.ready {
+    background-image: linear-gradient(to right,rgb(20, 172, 20) 100%, rgba(0,0,0,0) 20%);
+}
+
+//Detail Component
+
 .detail-wrapper {
     display: flex;
     .icon {
@@ -10,7 +40,7 @@
     svg {
         display: flex;
         align-content: center;
-        height: 40px;
+        height: 25px;
         justify-content: center;
     }
     .details {
@@ -19,3 +49,4 @@
         justify-content: center;
     }
 }
+
