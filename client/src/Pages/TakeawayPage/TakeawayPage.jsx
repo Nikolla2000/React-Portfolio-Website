@@ -27,19 +27,15 @@ import OrderItem from "./OrderItemComponent"
                 </div>
                 {orderDetails && orderDetails.map((orderDetail, index) => { 
                     return (
-                    <DetailComponent 
-                        detailTitle={orderDetail.detailTitle} 
-                        detail={orderDetail.detail} 
-                        icon={orderDetail.icon}
-                        key={index}/>
+                        <DetailComponent 
+                            {...orderDetail}
+                            key={index}/>
                 )
                 })}
                 {orderItems && orderItems.map((item, index) => {
                     return (
                         <OrderItem 
-                            item={item.item}
-                            price={item.price}
-                            quantity={item.quantity}
+                            {...item}
                             key={index} />
                     )
                 })}
