@@ -89,6 +89,28 @@
     .item, .price {
         padding: 15px 0 15px 0;
     }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &:last-of-type {
+        background-color: rgb(193, 193, 193);
+    }
+
+    .contact-icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        svg {
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    }
 }
 
 
