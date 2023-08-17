@@ -4,6 +4,7 @@ import DetailComponent from "./DetailComponent"
 import details from "./orderDetails"
 import ProgressBar from "./ProgressBar"
 import OrderItem from "./OrderItemComponent"
+import {Button} from "react-bootstrap"
 
 const TakeawayPage = () => {
     const [orderStatus, setOrderStatus] = useState('Waiting for confirmation')
@@ -53,6 +54,7 @@ const TakeawayPage = () => {
                 item='Contacts to the restaurant'
                 subInfo='+359889990030'
             />
+            <Button className="back-menu-btn mt-10" variant="dark">Back to the Menu</Button>
         </div>
     )
 }
