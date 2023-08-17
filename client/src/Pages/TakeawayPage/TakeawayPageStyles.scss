@@ -69,3 +69,26 @@
     }
 }
 
+
+//Order Item
+
+.item-wrapper {
+    display:flex;
+    justify-content: space-between;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: gray;
+        transform: translateY(-50%);
+    }
+
+    .item, .price {
+        padding: 15px 0 15px 0;
+    }
+}
+
+

@@ -16,6 +16,11 @@ import OrderItem from "./OrderItemComponent"
             setOrderItems(details[1])
         }, [])
 
+        const totalOrderPrice = 
+            orderItems
+        ? orderItems.reduce((total, item) => total + item.price * item.quantity, 0)
+        : 0;
+
         return (
             <div className="takeaway-page-wrapper">
                 <p>Explanation: This is a page which i need for another project, but since the master branch of this project is currently bugged and i cant work there, im using this one and then will transfer my code.</p>
@@ -39,6 +44,9 @@ import OrderItem from "./OrderItemComponent"
                             key={index} />
                     )
                 })}
+                <OrderItem 
+                    item={'Total'}
+                    totalPrice={totalOrderPrice}/>
             </div>
         )
     }
