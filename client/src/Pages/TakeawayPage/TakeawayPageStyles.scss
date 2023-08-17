@@ -1,3 +1,10 @@
+//General
+.takeaway-page-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+
 //Progress Bar
 .progress-bar{
     background-color: rgb(194, 194, 194);
@@ -29,7 +36,6 @@
 
 
 //Pizza Image
-
 .pizza-img {
     background-color: rgb(217, 210, 244);
     border-radius: 50px 0 0 50px;
@@ -47,7 +53,6 @@
 
 
 //Detail Component
-
 .detail-wrapper {
     display: flex;
     .icon {
@@ -71,7 +76,6 @@
 
 
 //Order Item
-
 .item-wrapper {
     display:flex;
     justify-content: space-between;
@@ -113,9 +117,18 @@
     }
 }
 
+
+//Back to Menu button
 .back-menu-btn {
     border-radius: 0;
     margin-top: 10px;
 }
 
+
+//Profile info
+.profile-info {
+    border: 1px solid gray;
+    display: flex;
+    width: 200px;
+}
 

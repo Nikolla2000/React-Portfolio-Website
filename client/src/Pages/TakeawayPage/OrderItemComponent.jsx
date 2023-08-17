@@ -6,7 +6,7 @@ const OrderItem = (props) => {
         <div className="item-wrapper">
             <div className="item">
                 {props.quantity > 1 && `${props.quantity}x `}{props.item}
-                {props.subInfo && <p>{props.subInfo}</p>}
+                {props.subInfo && <a href={`tel:${props.subInfo}`}>{props.subInfo}</a>}
             </div>
             {props.subInfo ? <div className="contact-icon-wrapper"><FontAwesomeIcon icon={faPhone} /></div> 
             :<div className="price">{props.totalPrice ? props.totalPrice : props.price * props.quantity} lv.</div>}
