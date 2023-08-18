@@ -1,18 +1,35 @@
+@import '../../index.scss';
+
 //General
 .takeaway-page-wrapper{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: baseline;
+    margin:100px 0 100px 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
+//Title
+.order-details {
+    h1 {
+        transform: skewX(-10deg);
+    }
+}
+
 //Progress Bar
 .progress-bar{
-    background-color: rgb(194, 194, 194);
+    background-color: $secondary-light-grey;
     height: 5px;
     width: 100%;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    position: relative;
+    overflow: visible;
    
 
     .separate-line {
@@ -20,34 +37,55 @@
         height: 100%;
         background-color: #fff;
     }
+
+    .circle {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border: 5px solid rgba(207, 235, 217, 0.8);
+        border-radius: 50px;
+        background-color: rgb(20, 172, 20);
+        top:-8px;
+    }
 }
 
 .waiting {
     background-image: linear-gradient(to right,rgb(20, 172, 20) 33%, rgba(0,0,0,0) 20%);
+
+    .circle {
+        left: 33%;
+    }
 }
 
 .preparing {
     background-image: linear-gradient(to right,rgb(20, 172, 20) 66.7%, rgba(0,0,0,0) 20%);
+
+    .circle {
+        left: 66%;
+    }
 }
 
 .ready {
     background-image: linear-gradient(to right,rgb(20, 172, 20) 100%, rgba(0,0,0,0) 20%);
+
+    .circle {
+        left: 100%;
+    }
 }
 
 
 //Pizza Image
 .pizza-img {
-    background-color: rgb(217, 210, 244);
+    background-color: $blue-ish-purple;
     border-radius: 50px 0 0 50px;
     height: 100px;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     img {
         width: 150px;
-        transform: rotate(-15deg);
     }
 }
 
@@ -55,6 +93,7 @@
 //Detail Component
 .detail-wrapper {
     display: flex;
+    gap:10px;
     .icon {
         display: flex;
         justify-content: center;
@@ -64,13 +103,18 @@
     svg {
         display: flex;
         align-content: center;
-        height: 25px;
+        height: 20px;
         justify-content: center;
     }
     .details {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 10px;
+
+        .detail {
+            font-size: 13px;
+        }
     }
 }
 
@@ -79,19 +123,24 @@
 .item-wrapper {
     display:flex;
     justify-content: space-between;
-
-    &::before {
+    position: relative;
+    
+    
+    &:not(:last-of-type)::before  {
         content: "";
         position: absolute;
         left: 0;
         width: 100%;
-        height: 1px;
-        background-color: gray;
+        height: 0.5px;
+        background-color: $primary-grey;
+        opacity: 0.8;
         transform: translateY(-50%);
     }
 
     .item, .price {
+        font-size: 14px;
         padding: 15px 0 15px 0;
+        transform: skewX(-10deg);
     }
 
     .item {
@@ -100,13 +149,23 @@
     }
 
     &:last-of-type {
-        background-color: rgb(193, 193, 193);
+        background-color: $secondary-light-grey;
+
+        .item {
+            margin-left: 10px;
+
+            a {
+                text-decoration: none;
+            }
+        }
     }
 
+    
     .contact-icon-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 10px;
         
         svg {
             padding: 7px;
@@ -117,6 +176,15 @@
     }
 }
 
+.item-price {
+
+    .item, .price {
+        font-weight: bold;
+    }
+    .price {
+        font-size: 16px;
+    }
+}
 
 //Back to Menu button
 .back-menu-btn {
@@ -125,10 +193,52 @@
 }
 
 
+
+//Right Side
+
 //Profile info
 .profile-info {
+    width: 100%;
+    height: 80px;
     border: 1px solid gray;
     display: flex;
-    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info {
+    margin-top:20px;
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid $secondary-light-grey;
+        margin: 0 auto;
+    }
+
+    p {
+        background-color: $secondary-light-grey;
+        max-width: 350px;
+        padding: 20px;
+    }
+}
+
+//Rating
+.rating {
+    background-color:$secondary-light-grey;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    padding-bottom: 25px;
+}
+
+
+.sub-order-status, .detail-title, .item > a, .profile-info > p {
+    font-size: 10px;
+    font-weight: 500;
+    color: $primary-dark-grey;
+    opacity: 0.8;
 }
 

@@ -5,6 +5,8 @@ import details from "./orderDetails"
 import ProgressBar from "./ProgressBar"
 import OrderItem from "./OrderItemComponent"
 import {Button} from "react-bootstrap"
+import RatingComponent from "./RatingComponent"
+
 
 const TakeawayPage = () => {
     const [orderStatus, setOrderStatus] = useState('Waiting for confirmation')
@@ -25,12 +27,20 @@ const TakeawayPage = () => {
     return (
         <div className="takeaway-page-wrapper">
             <div className="order-details">
-                <p>Explanation: This is a page which i need for another project, but since the master branch of this project is currently bugged and i cant work there, im using this one and then will transfer my code.</p>
                 <h1>{orderStatus}</h1>
-                <h6>{subOrderStatus}</h6>
+                <h6 className="sub-order-status">{subOrderStatus}</h6>
                 <ProgressBar status={orderStatus}/>
                 <div className="pizza-img">
-                    <img src='../../src/assets/images/menu-pizzas.png'/>
+                    <img
+                        src={`../../src/assets/images/${
+                            orderStatus === "Waiting for confirmation"
+                            ? "waiting.png"
+                            : orderStatus === "Your order is being prepared"
+                            ? "preparing2.webp"
+                            : "ready.png"
+                        }`}
+                        alt="Pizza"
+                    />
                 </div>
                 {orderDetails && orderDetails.map((orderDetail, index) => { 
                     return (
@@ -62,6 +72,11 @@ const TakeawayPage = () => {
                     <h6>Profile</h6>
                     <p>+359899470320</p>
                 </div>
+            <div className="info">
+                <div className="triangle"></div>
+                <p>"Welcome to Elixir Pizzeria, where the art of pizza-making comes to life. Immerse yourself in a culinary experience that transcends tradition, where each slice tells a story of craftsmanship and passion. Indulge in the magic of flavors that only Elixir can offer."</p>
+                <RatingComponent/>
+            </div>
             </div>
         </div>
     )
