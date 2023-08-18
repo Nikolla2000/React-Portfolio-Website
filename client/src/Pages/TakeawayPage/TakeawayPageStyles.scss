@@ -13,6 +13,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    position: relative;
+    overflow: visible;
    
 
     .separate-line {
@@ -20,18 +22,40 @@
         height: 100%;
         background-color: #fff;
     }
+
+    .circle {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border: 5px solid rgba(207, 235, 217, 0.8);
+        border-radius: 50px;
+        background-color: rgb(20, 172, 20);
+        top:-8px;
+    }
 }
 
 .waiting {
     background-image: linear-gradient(to right,rgb(20, 172, 20) 33%, rgba(0,0,0,0) 20%);
+
+    .circle {
+        left: 33%;
+    }
 }
 
 .preparing {
     background-image: linear-gradient(to right,rgb(20, 172, 20) 66.7%, rgba(0,0,0,0) 20%);
+    
+    .circle {
+        left: 66%;
+    }
 }
 
 .ready {
     background-image: linear-gradient(to right,rgb(20, 172, 20) 100%, rgba(0,0,0,0) 20%);
+
+    .circle {
+        left: 100%;
+    }
 }
 
 
@@ -47,7 +71,7 @@
     overflow: hidden;
     img {
         width: 150px;
-        transform: rotate(-15deg);
+        // transform: rotate(-15deg);
     }
 }
 

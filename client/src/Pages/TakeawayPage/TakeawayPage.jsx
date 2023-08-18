@@ -32,7 +32,16 @@ const TakeawayPage = () => {
                 <h6>{subOrderStatus}</h6>
                 <ProgressBar status={orderStatus}/>
                 <div className="pizza-img">
-                    <img src='../../src/assets/images/menu-pizzas.png'/>
+                    <img
+                        src={`../../src/assets/images/${
+                            orderStatus === "Waiting for confirmation"
+                            ? "waiting.png"
+                            : orderStatus === "Your order is being prepared"
+                            ? "preparing2.webp"
+                            : "ready.png"
+                        }`}
+                        alt="Pizza"
+                    />
                 </div>
                 {orderDetails && orderDetails.map((orderDetail, index) => { 
                     return (
