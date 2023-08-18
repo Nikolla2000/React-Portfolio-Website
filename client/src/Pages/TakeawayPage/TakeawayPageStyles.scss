@@ -125,10 +125,41 @@
 }
 
 
+
+//Right Side
+
 //Profile info
 .profile-info {
     border: 1px solid gray;
     display: flex;
     width: 200px;
+}
+
+.info {
+    margin-top:20px;
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid rgb(232, 232, 232);
+        margin: 0 auto;
+    }
+
+    p {
+        background-color: rgb(232, 232, 232);
+        max-width: 350px;
+        padding: 20px;
+    }
+}
+
+//Rating
+.rating {
+    background-color:rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    padding-bottom: 25px;
 }
 

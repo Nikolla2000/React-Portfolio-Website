@@ -47,21 +47,5 @@ const orderDetails = [
     ]
 ];
 
-const orderItems = [
-    {
-        item: 'Capricossa',
-        quantity: 2,
-        price: 11.99,
-    },
-    {
-        item: 'Formaggi',
-        quantity: 1,
-        price: 10.99
-    },
-    {
-        item: 'Margaritta',
-        quantity: 1,
-        price: 8.99
-    }
-]
+
 export default orderDetails

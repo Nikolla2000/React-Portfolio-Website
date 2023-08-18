@@ -5,6 +5,8 @@ import details from "./orderDetails"
 import ProgressBar from "./ProgressBar"
 import OrderItem from "./OrderItemComponent"
 import {Button} from "react-bootstrap"
+import RatingComponent from "./RatingComponent"
+
 
 const TakeawayPage = () => {
     const [orderStatus, setOrderStatus] = useState('Waiting for confirmation')
@@ -62,6 +64,11 @@ const TakeawayPage = () => {
                     <h6>Profile</h6>
                     <p>+359899470320</p>
                 </div>
+            <div className="info">
+                <div className="triangle"></div>
+                <p>"Welcome to Elixir Pizzeria, where the art of pizza-making comes to life. Immerse yourself in a culinary experience that transcends tradition, where each slice tells a story of craftsmanship and passion. Indulge in the magic of flavors that only Elixir can offer."</p>
+                <RatingComponent/>
+            </div>
             </div>
         </div>
     )
