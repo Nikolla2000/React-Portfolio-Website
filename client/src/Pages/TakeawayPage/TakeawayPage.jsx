@@ -27,7 +27,6 @@ const TakeawayPage = () => {
     return (
         <div className="takeaway-page-wrapper">
             <div className="order-details">
-                <p>Explanation: This is a page which i need for another project, but since the master branch of this project is currently bugged and i cant work there, im using this one and then will transfer my code.</p>
                 <h1>{orderStatus}</h1>
                 <h6>{subOrderStatus}</h6>
                 <ProgressBar status={orderStatus}/>

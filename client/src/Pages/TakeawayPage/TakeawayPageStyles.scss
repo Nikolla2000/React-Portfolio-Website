@@ -2,6 +2,10 @@
 .takeaway-page-wrapper{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: baseline;
+    margin-top: 100px;
 }
 
 
@@ -44,7 +48,7 @@
 
 .preparing {
     background-image: linear-gradient(to right,rgb(20, 172, 20) 66.7%, rgba(0,0,0,0) 20%);
-    
+
     .circle {
         left: 66%;
     }
@@ -154,9 +158,12 @@
 
 //Profile info
 .profile-info {
+    width: 100%;
+    height: 80px;
     border: 1px solid gray;
     display: flex;
-    width: 200px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .info {
