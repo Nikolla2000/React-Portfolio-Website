@@ -28,7 +28,7 @@ const TakeawayPage = () => {
         <div className="takeaway-page-wrapper">
             <div className="order-details">
                 <h1>{orderStatus}</h1>
-                <h6>{subOrderStatus}</h6>
+                <h6 className="sub-order-status">{subOrderStatus}</h6>
                 <ProgressBar status={orderStatus}/>
                 <div className="pizza-img">
                     <img

@@ -7,15 +7,24 @@
     justify-content: center;
     gap: 20px;
     align-items: baseline;
-    margin-top: 100px;
+    margin:100px 0 100px 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
+//Title
+.order-details {
+    h1 {
+        transform: skewX(-10deg);
+    }
+}
+
 //Progress Bar
 .progress-bar{
-    background-color: rgb(194, 194, 194);
+    background-color: $secondary-light-grey;
     height: 5px;
     width: 100%;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -67,17 +76,16 @@
 
 //Pizza Image
 .pizza-img {
-    background-color: rgb(217, 210, 244);
+    background-color: $blue-ish-purple;
     border-radius: 50px 0 0 50px;
     height: 100px;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     img {
         width: 150px;
-        // transform: rotate(-15deg);
     }
 }
 
@@ -101,6 +109,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        .detail {
+            font-size: 14px;
+        }
     }
 }
 
@@ -109,19 +121,24 @@
 .item-wrapper {
     display:flex;
     justify-content: space-between;
-
-    &::before {
+    position: relative;
+    
+    
+    &:not(:last-of-type)::before  {
         content: "";
         position: absolute;
         left: 0;
         width: 100%;
-        height: 1px;
-        background-color: gray;
+        height: 0.5px;
+        background-color: $primary-grey;
+        opacity: 0.8;
         transform: translateY(-50%);
     }
 
     .item, .price {
+        font-size: 14px;
         padding: 15px 0 15px 0;
+        transform: skewX(-10deg);
     }
 
     .item {
@@ -130,13 +147,23 @@
     }
 
     &:last-of-type {
-        background-color: rgb(193, 193, 193);
+        background-color: $secondary-light-grey;
+
+        .item {
+            margin-left: 10px;
+
+            a {
+                text-decoration: none;
+            }
+        }
     }
 
+    
     .contact-icon-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 10px;
         
         svg {
             padding: 7px;
@@ -147,6 +174,15 @@
     }
 }
 
+.item-price {
+
+    .item, .price {
+        font-weight: bold;
+    }
+    .price {
+        font-size: 16px;
+    }
+}
 
 //Back to Menu button
 .back-menu-btn {
@@ -176,12 +212,12 @@
         height: 0;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
-        border-bottom: 15px solid rgb(232, 232, 232);
+        border-bottom: 15px solid $secondary-light-grey;
         margin: 0 auto;
     }
 
     p {
-        background-color: rgb(232, 232, 232);
+        background-color: $secondary-light-grey;
         max-width: 350px;
         padding: 20px;
     }
@@ -189,10 +225,18 @@
 
 //Rating
 .rating {
-    background-color:rgb(232, 232, 232);
+    background-color:$secondary-light-grey;
     display: flex;
     justify-content: center;
     margin-top: -20px;
     padding-bottom: 25px;
+}
+
+
+.sub-order-status, .detail-title, .item > a, .profile-info > p {
+    font-size: 10px;
+    font-weight: 500;
+    color: $primary-dark-grey;
+    opacity: 0.8;
 }
 
