@@ -24,7 +24,7 @@
     background-color: $secondary-light-grey;
     height: 5px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -94,26 +94,30 @@
 .detail-wrapper {
     display: flex;
     gap:10px;
+
+    &:last-of-type {
+        margin-bottom: 100px !important;
+    }
     .icon {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100px;
     }
     svg {
         display: flex;
         align-content: center;
-        height: 20px;
+        height: 18px;
         justify-content: center;
     }
     .details {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 15px;
 
         .detail {
             font-size: 13px;
+            margin-top: -15px;
         }
     }
 }
@@ -235,7 +239,7 @@
 }
 
 
-.sub-order-status, .detail-title, .item > a, .profile-info > p {
+.sub-order-status, .detail-title, .item > a, .profile-info > p, .your-order-ptag {
     font-size: 10px;
     font-weight: 500;
     color: $primary-dark-grey;

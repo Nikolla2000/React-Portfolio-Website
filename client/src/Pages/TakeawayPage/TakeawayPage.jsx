@@ -18,12 +18,12 @@ const TakeawayPage = () => {
         setOrderDetails(details[0])
         setOrderItems(details[1])
     }, [])
-
+    
     const totalOrderPrice = 
-        orderItems
+    orderItems
     ? orderItems.reduce((total, item) => total + item.price * item.quantity, 0)
     : 0;
-
+    
     return (
         <div className="takeaway-page-wrapper">
             <div className="order-details">
@@ -45,16 +45,17 @@ const TakeawayPage = () => {
                 {orderDetails && orderDetails.map((orderDetail, index) => { 
                     return (
                         <DetailComponent 
-                            {...orderDetail}
-                            key={index}/>
+                        {...orderDetail}
+                        key={index}/>
                 )
                 })}
+                <p className="your-order-ptag mt-3">Your order</p>
                 {orderItems && orderItems.map((item, index) => {
                     return (
                         <OrderItem 
-                            {...item}
+                        {...item}
                             key={index} 
-                        />
+                            />
                     )
                 })}
                 <OrderItem 
