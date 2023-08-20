@@ -17,6 +17,21 @@ const TakeawayPage = () => {
     useEffect(() => {
         setOrderDetails(details[0])
         setOrderItems(details[1])
+
+        const prepareTimeout = setTimeout(() => {
+            setOrderStatus('Preparing');
+            setSubOrderStatus('Your order is being prepared')
+        }, 5000); // 1 minute
+
+        const readyTimeout = setTimeout(() => {
+            setOrderStatus('Ready to Take');
+            setSubOrderStatus('Your order is ready to be taken');
+        }, 10000); // 15
+
+        return () => {
+            clearTimeout(prepareTimeout);
+            clearTimeout(readyTimeout);
+        };
     }, [])
     
     const totalOrderPrice = 
