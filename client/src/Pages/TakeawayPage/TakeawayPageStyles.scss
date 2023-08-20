@@ -253,4 +253,29 @@
 }
 
 
+@media screen and (max-width: 700px) {
+    .takeaway-page-wrapper {
+        display: block;
+
+        .back-menu-btn {
+            display: block;
+            margin: 20px auto;
+        }
+        .order-details, .other-details {
+            margin: 0 auto;
+        }
+
+        .other-details {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .info {
+                display: block;
+                margin: 20px auto;
+            }
+        }
+    }
+}
 
