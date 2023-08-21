@@ -1,5 +1,6 @@
 import { Outlet, useNavigation } from "react-router"
 import Navigation from "../Components/Layout/Navigation/Navigation"
+import "./RootLayout.scss"
 
 const RootLayout = () => {
     const navigation  = useNavigation()
