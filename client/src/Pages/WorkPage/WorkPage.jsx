@@ -1,6 +1,12 @@
+import TakeawayPage from "../TakeawayPage/TakeawayPage"
+
 const WorkPage = () => {
     return (
-        <div>Work Page</div>
+        <div>
+            <h1>Work Page</h1>
+            <TakeawayPage/>
+        </div>
+        
     )
 }
 
