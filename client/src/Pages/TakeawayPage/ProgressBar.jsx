@@ -3,7 +3,7 @@ const ProgressBar = ({ status }) => {
     return (
         <div className={`progress-bar ${status == 'Waiting for confirmation' ? 
         'waiting'
-        : status == 'Your order is being prepared' ? 
+        : status == 'Preparing' ? 
         'preparing' : 'ready'}`}>
             {/* <div className="green-section"></div> */}
             <div className="separate-line"></div>
