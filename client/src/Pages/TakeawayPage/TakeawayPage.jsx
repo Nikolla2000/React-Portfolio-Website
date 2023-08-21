@@ -50,7 +50,7 @@ const TakeawayPage = () => {
                         src={`../../src/assets/images/${
                             orderStatus === "Waiting for confirmation"
                             ? "waiting.png"
-                            : orderStatus === "Your order is being prepared"
+                            : orderStatus === "Preparing"
                             ? "preparing2.webp"
                             : "ready.png"
                         }`}
