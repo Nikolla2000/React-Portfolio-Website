@@ -14,10 +14,18 @@
     background: url("../../src/assets/images/background2.png") no-repeat center center;
     height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    .header-wrapper {
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+    gap:150px;
+    }
     h1 {
+        font-size: 3em;
         color: $primary-white;
 
         span {
