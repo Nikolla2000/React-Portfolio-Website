@@ -3,9 +3,9 @@ import "./Header.scss"
 const Header = () => {
     return (
         <header>
-            <h1>I'm Nikola Uzunov</h1>
+            <h1>I'm <span>Nikola</span> Uzunov</h1>
             <div className="img-wrapper">
-                <img src="../../src/assets/images/myImage.jpg" alt="Image of myself"/>
+                <img src="../../src/assets/images/copy.jpg" alt="Image of myself"/>
             </div>
         </header>
     )
