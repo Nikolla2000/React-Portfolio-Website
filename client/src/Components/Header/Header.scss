@@ -1,0 +1,23 @@
+@import "../../index.scss";
+
+header {
+    background: url("../../src/assets/images/background.jpg") no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h1 {
+        color: $primary-white;
+    }
+
+    .img-wrapper {
+        height: 300px;
+        border-radius: 80px;
+
+        img {
+            height: 100%;
+            border-radius: 150px;
+        }
+    }
+}
