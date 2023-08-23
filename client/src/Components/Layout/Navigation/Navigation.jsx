@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom"
 import routes from "../../../utils/routes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import "./Navigation.scss"
+import "./NavigationStyles.scss"
 
 const Navigation = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false)

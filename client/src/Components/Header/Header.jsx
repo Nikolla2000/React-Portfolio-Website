@@ -1,4 +1,4 @@
-import "./Header.scss"
+import "./HeaderStyles.scss"
 import "animate.css"
 import { useEffect, useState } from "react"
 import TrackVisibility from "react-on-screen"
@@ -46,7 +46,7 @@ const Header = () => {
             {({ isVisible }) =>
             <div className={`header-wrapper ${isVisible && "animate__animated animate__fadeInDown"}`}>
                 <div className="heading">
-                    <h1>I'm <span>Nikola</span> Uzunov</h1>
+                    <h1>Hi I'm <span>Nikola</span> Uzunov</h1>
                     <span className="sub-title">{text}</span>
                 </div>
                 <div className="img-wrapper">
