@@ -31,7 +31,7 @@ const Navigation = () => {
                 <FontAwesomeIcon
                     className="mobile-menu-btn"
                     icon={faBars}
-                    oncClick={() => {
+                    onClick={() => {
                         setShowMobileMenu(!showMobileMenu);
                     }}
                  />
