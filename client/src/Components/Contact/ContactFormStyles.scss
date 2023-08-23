@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+.contact-section-wrapper {
+    background-image: url("../../assets/images/background.jpg");
+    text-align: center;
+
+    .contact-heading {
+        color:$primary-white;
+        margin: 0 auto;
+    }
+
+    #contact-form {
+        border: 1px solid $secondary-light-grey;
+    }
+
+    input, textarea {
+        background-image: url("../../assets/images/background.jpg");
+        color: $primary-white;
+
+    }
+    input::placeholder, textarea::placeholder {
+        color: $primary-white;
+      }
+
+    .form-submit-button {
+        border-radius: 50px;
+        padding: 15px 25px;
+    }
+}
