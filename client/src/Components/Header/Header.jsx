@@ -1,4 +1,4 @@
-import "./Header.scss"
+import "./HeaderStyles.scss"
 import "animate.css"
 import { useEffect, useState } from "react"
 import TrackVisibility from "react-on-screen"
