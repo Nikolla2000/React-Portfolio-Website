@@ -24,12 +24,25 @@
     align-items: center;
     gap:150px;
     }
-    h1 {
-        font-size: 3em;
-        color: $primary-white;
 
-        span {
-            color:$primary-light-red;
+    .heading {
+        
+        h1 {
+            color: $primary-white;
+            font-size: 3em;
+            line-height: 2;
+    
+            span {
+                color:$primary-light-red;
+            }
+        }
+        .sub-title {
+            color: $primary-light-grey;
+            height: 1em;
+            font-size: 2em;
+            display: inline-block;
+            vertical-align: top; 
+            margin-left: 5px;
         }
     }
 
