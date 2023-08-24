@@ -44,7 +44,8 @@ const FormBuilder = ({ configurations }) => {
                     minLength={inputData.minLength && inputData.minLength}
                     maxLength={inputData.maxLength && inputData.maxLength}
                     value={formData[inputData.name] || ''}
-                    onChange={handleInputChange}/>
+                    onChange={handleInputChange}
+                    onFocus={() => alert('ee')}/>
             ))}
         </Form>
     )
