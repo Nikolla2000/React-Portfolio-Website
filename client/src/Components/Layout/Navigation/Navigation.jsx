@@ -11,7 +11,7 @@ const Navigation = () => {
         <nav>
             <div className="nav-wrapper">
                 <Link to="/">
-                    <img src='../../../src/assets/images/waiting.png'/>
+                    <img src='../../../src/assets/images/logo.svg'/>
                 </Link>
                 <div className={showMobileMenu ? "show-mobile-menu" : "nav-menu"}>
                     {Object.values(routes)
