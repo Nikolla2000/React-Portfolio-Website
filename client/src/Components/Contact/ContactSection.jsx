@@ -8,11 +8,12 @@ import "./ContactFormStyles.scss"
 const ContactSection = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const wordToDisplay = ["Hi My Name is..."];
+  const wordToDisplay = ["Hi, My Name is ..."];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 1500;
-  const [focusedInput, setFocusInput] = useState("")
+  const period = 1000;
+
+  const [focusedInput, setFocusedInput] = useState("")
 
   const tick = () => {
     let i = loopNum % wordToDisplay.length;
@@ -43,15 +44,28 @@ const ContactSection = () => {
       return () => { clearInterval(ticker) }
   }, [text])
 
+  const formImage = focusedInput === 'email' ?
+  "../../src/assets/images/email.png"
+  : focusedInput === 'number' ?
+  "../../src/assets/images/phone.png"
+  : focusedInput === 'subject' ?
+  "../../src/assets/images/subject.png"
+  : focusedInput === 'message' ?
+  "../../src/assets/images/message.png"
+  : "../../src/assets/images/default-contact-img.svg";
+
     return (
       <section className="contact-section-wrapper">
         <div className="form-and-img-wrapper">
           <div className="form-img">
-            <img src="../../src/assets/images/default-contact-img.svg"/>
+            {focusedInput === "name" ? <p className="name-animation">{text}</p> : <img src={formImage}/>}    
           </div>
           <div className="form-wrapper">
             <h1 className="contact-heading">Lets Talk</h1>
-            <FormBuilder configurations={inputConfigurations}/>
+            <FormBuilder 
+                configurations={inputConfigurations}
+                focusedInput={focusedInput}
+                setFocusedInput={setFocusedInput}/>
             <Button 
               type="submit"
               form="contact-form"

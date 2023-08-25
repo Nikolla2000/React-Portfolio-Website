@@ -16,10 +16,18 @@
 
         .form-img {
             height: 300px;
+            width: 300px;
 
             img{
                 height: 100%;
             }
+        }
+
+        .name-animation {
+            color: $primary-white;
+            font-size: 3em;
+            font-weight: bold;
+            margin-top:50px;
         }
         #contact-form {
             display: grid;
