@@ -1,6 +1,6 @@
 import "./HeaderStyles.scss"
-import "animate.css"
 import { useEffect, useState } from "react"
+import "animate.css"
 import TrackVisibility from "react-on-screen"
 
 const Header = () => {
