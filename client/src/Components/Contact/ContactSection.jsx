@@ -2,8 +2,9 @@ import { Button } from "react-bootstrap"
 import FormBuilder from "./FormBuilder"
 import inputConfigurations from "./formConfigurations"
 import { useState, useEffect } from "react"
+import "animate.css"
+import TrackVisibility from "react-on-screen"
 import "./ContactFormStyles.scss"
-// import { tick } from "../Header/Header"
 
 const ContactSection = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -14,6 +15,7 @@ const ContactSection = () => {
   const period = 1000;
 
   const [focusedInput, setFocusedInput] = useState("")
+  const [formImgAnimation, setFormImgAnimation] = useState("")
 
   const tick = () => {
     let i = loopNum % wordToDisplay.length;
@@ -54,12 +56,30 @@ const ContactSection = () => {
   "../../src/assets/images/message.png"
   : "../../src/assets/images/default-contact-img.svg";
 
+  useEffect(()=> {
+    if(focusedInput === 'email'){
+      setFormImgAnimation('backInLeft')
+    } else if (focusedInput === 'number'){
+      setFormImgAnimation('tada')
+    } else if (focusedInput === 'subject' ) {
+      setFormImgAnimation('headShake')
+    } else {setFormImgAnimation('heartBeat')}
+  }, [focusedInput])
+  
+
     return (
       <section className="contact-section-wrapper">
         <div className="form-and-img-wrapper">
+            <TrackVisibility>
+            {({ isVisible }) =>
           <div className="form-img">
-            {focusedInput === "name" ? <p className="name-animation">{text}</p> : <img src={formImage}/>}    
-          </div>
+              {focusedInput === "name" ? 
+              <p className={`name-animation ${isVisible && "animate__animated animate__backInLeft"}`}>{text}</p> 
+              : <img 
+                  src={formImage}
+                  className={focusedInput && isVisible && `animate__animated animate__${formImgAnimation}`}/>}
+          </div>}
+            </TrackVisibility>  
           <div className="form-wrapper">
             <h1 className="contact-heading">Lets Talk</h1>
             <FormBuilder 
