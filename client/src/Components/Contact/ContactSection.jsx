@@ -73,6 +73,7 @@ const ContactSection = () => {
             <TrackVisibility>
             {({ isVisible }) =>
           <div className="form-img">
+            {window.innerWidth <= 900 && <h1 className="small-heading">Lets Talk</h1>}
               {focusedInput === "name" ? 
               <p className={`name-animation ${isVisible && "animate__animated animate__backInLeft"}`}>{text}</p> 
               : <img 
@@ -89,7 +90,7 @@ const ContactSection = () => {
             <Button 
               type="submit"
               form="contact-form"
-              variant="danger"
+              variant="light"
               className="form-submit-button"
               >Send Message
             </Button>
