@@ -1,6 +1,8 @@
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import AboutTab from './Tabs/AboutTab';
+import SkillsTab from './Tabs/skills/SkillsTab';
+import "./AboutStyles.scss"
 
 const AboutSection = () => {
     return (
@@ -18,7 +20,7 @@ const AboutSection = () => {
                 <AboutTab/>
             </Tab>
             <Tab eventKey="skill" title="Skill">
-                Tab content for Profile
+                <SkillsTab/>
             </Tab>
             <Tab eventKey="services" title="Services">
                 Tab content for Loooonger Tab
