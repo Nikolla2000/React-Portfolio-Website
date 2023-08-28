@@ -8,6 +8,7 @@ const SkillsTab = () => {
     return (
         <div className='skills-wrapper'>
             <Container>
+                <h2>Basic Frontend Techonologies</h2>
                 <Row className="justify-content-center">
                 {skillsData.map((skill, index) => {
                     if (skill.upperRow) {
@@ -21,6 +22,7 @@ const SkillsTab = () => {
                     }
                 })}
                 </Row>
+                <h2>Frameworks / Libraries</h2>
                 <Row>
                     {skillsData.map((skill, index) => {
                         if(!skill.upperRow) {
