@@ -1,0 +1,28 @@
+@import "../../index.scss";
+
+//Skills Section
+.skills-wrapper {
+    background-color: $background-dark-blue;
+    h2 {
+        text-align: center;
+        color: $primary-white;
+        font-weight: bold;
+        padding: 30px 0;
+    }
+
+    .skill-wrapper {
+        text-align: center;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+        
+        span {
+            display: block;
+            color: $secondary-light-grey;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+}
