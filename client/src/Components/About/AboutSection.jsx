@@ -3,6 +3,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import AboutTab from './Tabs/AboutTab';
 import SkillsTab from './Tabs/skills/SkillsTab';
 import "./AboutStyles.scss"
+import ServicesTab from './Tabs/services/ServicesTab';
 
 const AboutSection = () => {
     return (
@@ -23,9 +24,12 @@ const AboutSection = () => {
                 <SkillsTab/>
             </Tab>
             <Tab eventKey="services" title="Services">
-                Tab content for Loooonger Tab
+                <ServicesTab/>
             </Tab>
-            <Tab eventKey="contact" title="Contact">
+            <Tab eventKey="social-media" title="Social Media">
+                Tab content for Contact
+            </Tab>
+            <Tab eventKey="certificates" title="Certificates">
                 Tab content for Contact
             </Tab>
             </Tabs>
