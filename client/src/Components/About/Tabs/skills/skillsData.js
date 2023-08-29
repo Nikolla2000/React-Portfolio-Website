@@ -23,7 +23,7 @@ const skillsData = [
         skillName: "NodeJS"
     },
     {
-        skillImg: "../../../src/assets/images/jslogo.gif",
+        skillImg: "../../../src/assets/images/express.png",
         skillName: "ExpressJS"
     },
     {

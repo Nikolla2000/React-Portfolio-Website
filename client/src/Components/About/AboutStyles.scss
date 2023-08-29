@@ -1,5 +1,14 @@
 @import "../../index.scss";
 
+.about-section {
+    background-color: $background-dark-blue;
+    color: $primary-white;
+
+    h1 {
+        font-weight: bold;
+    }
+}
+
 //Skills Section
 .skills-wrapper {
     background-color: $background-dark-blue;
@@ -15,7 +24,7 @@
 
         img {
             width: 150px;
-            height: 150px;
+            height: 140px;
         }
         
         span {
@@ -24,5 +33,24 @@
             font-weight: bold;
             font-size: 1.2em;
         }
+    }
+}
+
+
+//Services section 
+.services {
+    padding: 50px 0;
+    img {
+        width: 260px;
+        height: 250px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    p {
+        margin-top: 20px;
     }
 }
