@@ -4,6 +4,7 @@ import AboutTab from './Tabs/AboutTab';
 import SkillsTab from './Tabs/skills/SkillsTab';
 import "./AboutStyles.scss"
 import ServicesTab from './Tabs/services/ServicesTab';
+import SocialMediaTab from './Tabs/socialMedia/SocialMediaTab';
 
 const AboutSection = () => {
     return (
@@ -27,7 +28,7 @@ const AboutSection = () => {
                 <ServicesTab/>
             </Tab>
             <Tab eventKey="social-media" title="Social Media">
-                Tab content for Contact
+                <SocialMediaTab/>
             </Tab>
             <Tab eventKey="certificates" title="Certificates">
                 Tab content for Contact
