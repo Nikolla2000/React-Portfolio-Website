@@ -8,9 +8,9 @@ const ServicesTab = () => {
     return (
         <div className="tab-wrapper services">
             <Container>
-                <Row className="justify-content-center">
+                <Row>
                     {servicesData.map((service, index) => (
-                        <Col md={6}>
+                        <Col md={6} lg={6}>
                             <ServiceComponent
                                 data={service}
                                 key={index + 1}/>
