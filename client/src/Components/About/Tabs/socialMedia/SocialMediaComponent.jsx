@@ -1,10 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLaptop} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SocialMediaComponent = ( {data} ) => {
     return (
         <div className="sm-wrapper">
-              <FontAwesomeIcon icon="fa-brands fa-facebook-f" />
+              <FontAwesomeIcon 
+                icon={data.icon}  
+                style={data.name === "GitHub" ? {borderColor: "#fff"} : {color: data.color, borderColor: data.color}}/>
             <span>{data.name}</span>
         </div>
     );
