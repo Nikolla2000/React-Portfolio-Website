@@ -1,7 +1,10 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLaptop} from '@fortawesome/free-solid-svg-icons'
+
 const SocialMediaComponent = ( {data} ) => {
     return (
         <div className="sm-wrapper">
-            <p>Icon</p>
+              <FontAwesomeIcon icon="fa-brands fa-facebook-f" />
             <span>{data.name}</span>
         </div>
     );
