@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
-import socialMediaData from "./socialMediaData";
 import Col from "react-bootstrap/esm/Col";
+import socialMediaData from "./socialMediaData";
 import SocialMediaComponent from "./SocialMediaComponent";
 
 const SocialMediaTab = () => {
@@ -10,7 +10,7 @@ const SocialMediaTab = () => {
             <Row>
                 {socialMediaData.map((socialMedia, index) => {
                     return (
-                        <Col md={6}>
+                        <Col lg={6} md={6} className="mt-4 mb-5">
                             <SocialMediaComponent
                                 data={socialMedia}
                                 key={index + 1}/>
