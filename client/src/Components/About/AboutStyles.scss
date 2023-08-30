@@ -83,3 +83,21 @@
         color: $primary-white;
     }
 }
+
+
+//Certificates Section
+.certificates-tab {
+    padding:50px 0;
+    .col-lg-6 {
+        background-color: $secondary-light-grey;
+        display: flex;
+        justify-content: center;
+        width: 445px;
+    }
+    a {
+        margin: 0 auto;
+        img {
+            height: 300px;
+        }
+    }
+}
