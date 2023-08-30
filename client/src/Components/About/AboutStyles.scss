@@ -58,11 +58,16 @@
 
 //Social Media Section
 .sm-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-
+    
+    a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 60%;
+        margin: 0 auto;
+    }
     svg {
         border: 1px solid rgb(44, 44, 177);
         padding: 20px 50px;
@@ -74,5 +79,7 @@
     span {
         font-weight: bold;
         font-size: 2em;
+        width: 160px !important;
+        color: $primary-white;
     }
 }

@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
-import socialMediaData from "./socialMediaData";
 import Col from "react-bootstrap/esm/Col";
+import socialMediaData from "./socialMediaData";
 import SocialMediaComponent from "./SocialMediaComponent";
 
 const SocialMediaTab = () => {
