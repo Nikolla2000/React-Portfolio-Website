@@ -5,21 +5,21 @@ import Button from 'react-bootstrap/Button'
 
 const AboutTab = () => {
     return (
-        <div className="tab-wrapper">
+        <div className="about-tab-wrapper">
             <Container>
                 <Row className='justify-content-md-center align-items-center'>
                     <Col>
                         <div className="about-img-wrapper">
-                            <img src="../../../../src/assets/images/myImage-no-background.png" alt="Image-of-myself" />
+                            <img src="../../../../src/assets/images/myImage4.png" alt="Image-of-myself" />
                         </div>
                     </Col>
                     <Col>
-                    <h1>I create products not just arts</h1>
-                    <p>My name is John Smith. I am a web designer and developer.Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                    <h1 className='about-heading'>I create products not just art</h1>
+                    <p>My name is Nikola Uzunov and I'm 23 years-old based in Varna, Bulgaria.I'm taking my first steps
+                        as a web developer. My primary focus is into frontend development. My appetite for growth and improvement drives me to explore this field further. 
+                        Let's connect and create amazing digital experiences together!
                     </p>
-                    <Button>
+                    <Button className='lets-talk-btn'>
                         Lets Talk
                     </Button>
                     </Col>

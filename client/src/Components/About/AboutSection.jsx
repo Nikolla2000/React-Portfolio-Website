@@ -10,7 +10,7 @@ import CertificatesTab from './Tabs/certificates/CertificatesTab';
 const AboutSection = () => {
     return (
         <section className="about-section">
-            <h1 className="about-heading">
+            <h1 className="main-about-heading">
                 About Me
             </h1>
             <Tabs

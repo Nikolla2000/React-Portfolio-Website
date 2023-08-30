@@ -3,10 +3,56 @@
 .about-section {
     background-color: $background-dark-blue;
     color: $primary-white;
+    padding-top: 100px;
+    padding-bottom: 10px;
 
-    h1 {
+    .main-about-heading {
+        font-size: 4em;
         font-weight: bold;
+        margin-left:30px;
     }
+
+    ul {
+        margin-top: 100px;
+
+        li button{
+            color: $primary-white;
+
+            &:hover {
+                color: $primary-white;
+            }
+        }
+    }
+}
+
+
+//About Tab 
+.about-tab-wrapper {
+ .about-img-wrapper img {
+    // background: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent);
+    display: flex;
+    justify-content: center;
+
+ }
+
+ .lets-talk-btn {
+    border: 1px solid $third-red;
+    font-weight: bold;
+    border-radius: 0;
+    background-color: rgb(29, 29, 149);
+    padding: 10px 30px;
+    margin-top:20px;
+ }
+
+ .about-heading {
+    font-weight: bold;
+    font-size: 3em;
+ }
+ p {
+    margin-top:40px;
+    line-height: 30px;
+ }
+    
 }
 
 //Skills Section
