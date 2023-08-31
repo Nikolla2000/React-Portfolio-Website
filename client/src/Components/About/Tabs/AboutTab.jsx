@@ -2,10 +2,26 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
+import { useEffect, useState } from 'react';
 
 const AboutTab = () => {
+    const [showGlowingLight, setShowGlowingLight] = useState(true)
+
+    useEffect(() => {
+        const handleResize = () => {
+            setShowGlowingLight(window.innerWidth > 1000); 
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    
     return (
-        <div className="about-tab-wrapper">
+        <div className={`about-tab-wrapper ${showGlowingLight && 'glowing-light'}`}>
             <Container>
                 <Row className='justify-content-md-center align-items-center'>
                     <Col>
