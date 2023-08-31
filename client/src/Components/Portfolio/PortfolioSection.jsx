@@ -1,34 +1,26 @@
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from '../../../src/assets/images/menu-pizzas.png';
+import portfolioData from './portfolioData';
 
 const PortfolioSection = () => {
     return (
         <section className="portfolio-section">
             <Carousel>
-      <Carousel.Item>
-        <img src={ExampleCarouselImage} text="First slide" />
-        <Carousel.Caption>
-          <h3>Fullstack Pizzarie Website</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={ExampleCarouselImage} text="First slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={ExampleCarouselImage} text="First slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+                {portfolioData.map((project, index) => (
+                    <Carousel.Item key={index}>
+                        {project.video ? (
+                            <video src={project.imgPath} title={project.title} autoPlay loop muted>
+                                Your browser does not support the video tag.
+                            </video>
+                        ) : (
+                            <img src={project.imgPath} alt={project.title} />
+                        )}
+                        <Carousel.Caption>
+                            <h3 className="project-title">{project.title}</h3>
+                            <p className="project-descr">{project.description}</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                ))}
+            </Carousel>
         </section>
     );
 };
