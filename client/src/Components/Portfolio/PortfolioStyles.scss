@@ -1,0 +1,38 @@
+@import "../../index.scss";
+
+.portfolio-section {
+    background-color: #121127;
+
+    h1 {
+        color: $primary-white;
+        font-weight: bold;
+        font-size: 4em;
+        margin-left: 30px;
+        padding: 40px 0;
+    }
+
+    .project-wrapper {
+        width:600px;
+        height: 400px;
+        margin: 0 auto;
+
+        img, video {
+            width: 100%;
+        }
+    }
+
+    .carousel-caption {
+
+        .project-title, .project-descr {
+            color: $primary-white;
+        }
+    
+        button {
+            background-color: #121127 !important;
+        }
+    }
+
+    .red-captions {
+        color: $primary-red !important;
+    }
+}
