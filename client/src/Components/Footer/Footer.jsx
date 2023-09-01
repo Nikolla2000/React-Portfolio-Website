@@ -2,6 +2,8 @@ import { faFacebookF, faGithub, faLinkedinIn } from '@fortawesome/free-brands-sv
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./FooterStyles.scss"
+import iconsData from './iconsData';
+import IconComponent from '../Icon/IconComponent';
 
 const Footer = () => {
 
@@ -16,9 +18,9 @@ const Footer = () => {
             </div>
             <div className="icons-rights-container">
                 <div className="icons-container">
-                    <FontAwesomeIcon icon={faFacebookF}/>
-                    <FontAwesomeIcon icon={faGithub}/>
-                    <FontAwesomeIcon icon={faLinkedinIn}/>
+                    {iconsData.map((icon) => (
+                        <IconComponent data={icon} key={icon.link}/>
+                    ))}
                 </div>
                 <span>©2023. All Rights Reserved</span>
             </div>
