@@ -1,0 +1,14 @@
+@import "../../index.scss";
+
+.icon-wrapper {
+
+    svg {
+        border: 1px solid white;
+        border-radius: 50px;
+        padding: 14px 18px;
+        color: $primary-white;
+        width: 15px;
+        font-size:1.5em;
+        background-color: $secondary-dark-grey;
+    }
+}
