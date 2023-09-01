@@ -1,0 +1,26 @@
+@import "../../index.scss";
+
+.portfolio-section {
+
+    .project-wrapper {
+        width:700px;
+        height: 500px;
+
+        img, video {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .project-title {
+        color: red;
+    }
+
+    .project-descr {
+        color: red;
+    }
+
+    button {
+        background-color: red !important;
+    }
+}
