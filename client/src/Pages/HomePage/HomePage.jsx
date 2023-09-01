@@ -1,5 +1,6 @@
 import AboutSection from "../../Components/About/AboutSection"
 import ContactSection from "../../Components/Contact/ContactSection"
+import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
 import PortfolioSection from "../../Components/Portfolio/PortfolioSection"
 
@@ -10,6 +11,7 @@ const HomePage = () => {
             <AboutSection/>
             <PortfolioSection/>
             <ContactSection/>
+            <Footer/>
         </div>
     )
 }
