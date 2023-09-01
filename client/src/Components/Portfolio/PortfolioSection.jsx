@@ -3,8 +3,10 @@ import portfolioData from './portfolioData';
 import "./PortfolioStyles.scss"
 
 const PortfolioSection = () => {
+
     return (
         <section className="portfolio-section">
+            <h1>My Work</h1>
             <Carousel>
                 {portfolioData.map((project, index) => (
                     <Carousel.Item key={index}>
@@ -19,8 +21,8 @@ const PortfolioSection = () => {
                         )}
                         </a>
                         <Carousel.Caption>
-                            <h3 className="project-title">{project.title}</h3>
-                            <p className="project-descr">{project.description}</p>
+                            <h3 className={`project-title ${index === 0 && "red-captions"}`}>{project.title}</h3>
+                            <p className={`project-descr ${index === 0 && "red-captions"}`}>{project.description}</p>
                         </Carousel.Caption>
                         </div>
                     </Carousel.Item>
