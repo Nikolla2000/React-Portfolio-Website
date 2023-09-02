@@ -1,11 +1,12 @@
-import { faFacebookF, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./FooterStyles.scss"
 import iconsData from './iconsData';
 import IconComponent from '../Icon/IconComponent';
+import { useState } from 'react';
 
 const Footer = () => {
+    const [arrowHovered, setArrowHovered] = useState(false)
 
     const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -13,8 +14,16 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className="up-arrow-container" onClick={scrollToTop}>
-                <FontAwesomeIcon icon={faArrowUp} style={{color: "#ffffff",}} />
+            <div 
+                className="up-arrow-container" 
+                onClick={scrollToTop} 
+                onMouseEnter={() => setArrowHovered(true)}
+                onMouseLeave={() => setArrowHovered(false)}>
+                <FontAwesomeIcon 
+                    icon={faArrowUp} 
+                    style={{color: "#ffffff"}} 
+                    className={`fa-thin ${arrowHovered && 'bounce'}`}
+                    />
             </div>
             <div className="icons-rights-container">
                 <div className="icons-container">
