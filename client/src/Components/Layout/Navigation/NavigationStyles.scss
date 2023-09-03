@@ -39,6 +39,17 @@ nav {
       }
     }
   
+
+    //Nav styles when not on home page
+    .white-nav {
+      background-color: $primary-white;
+
+    }
+
+    a{
+      color:$primary-black;
+    }
+
     .mobile-menu-btn {
       color: $primary-white;
       font-size: 2rem;

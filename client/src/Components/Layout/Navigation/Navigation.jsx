@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import routes from "../../../utils/routes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -7,9 +7,12 @@ import "./NavigationStyles.scss"
 
 const Navigation = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
+    const location = useLocation()
+
+    const alternativeNavStyles = location.pathname !== '/' ? 'white-nav' : ''
     return (
-        <nav>
-            <div className="nav-wrapper">
+        <nav className={alternativeNavStyles}>
+            <div className='nav-wrapper'>
                 <Link to="/">
                     <img src='../../../src/assets/images/logo.svg'/>
                 </Link>
