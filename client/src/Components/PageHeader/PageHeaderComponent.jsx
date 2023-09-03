@@ -4,6 +4,7 @@ import Col from "react-bootstrap/esm/Col";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import "./PageHeaderStyles.scss"
 import { Link } from "react-router-dom";
+import shapesData from "./shapesData";
 
 const PageHeaderComponent = ({ heading }) => {
     return (
@@ -15,11 +16,11 @@ const PageHeaderComponent = ({ heading }) => {
                 {heading.breadcrumb}
             </Breadcrumb.Item>
             </Breadcrumb>
-            <div className="shape"></div>
-            <div className="shape2"></div>
-            <div className="shape3"></div>
-            <div className="shape4"></div>
-            <div className="shape5"></div>
+            {shapesData.map((shape, index) => (
+                <div className={`shape shape${index + 1}`} key={index + 1}>
+                    <img src={shape.imgSrc}  alt="shape"/>
+                </div>
+            ))}
         </section>
     );
 };
