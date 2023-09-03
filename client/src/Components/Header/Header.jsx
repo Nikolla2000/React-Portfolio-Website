@@ -2,6 +2,8 @@ import "./HeaderStyles.scss"
 import { useEffect, useState } from "react"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
+import iconsData from "../Footer/iconsData"
+import IconComponent from "../Icon/IconComponent"
 
 const Header = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -9,7 +11,20 @@ const Header = () => {
     const wordToDisplay = ["A Web Developer"];
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const period = 1500;
+    const period = 2000;
+
+    const [fadeInLeftVisible, setFadeInLeftVisible] = useState(false);
+
+    useEffect(() => {
+        const fadeInLeftTimer = setTimeout(() => {
+        setFadeInLeftVisible(true);
+        }, 1000); 
+
+        return () => {
+        clearTimeout(fadeInLeftTimer);
+
+        };
+    }, []);
 
     const tick = () => {
         let i = loopNum % wordToDisplay.length;
@@ -48,6 +63,11 @@ const Header = () => {
                 <div className="heading">
                     <h1>Hi I'm <span>Nikola</span> Uzunov</h1>
                     <span className="sub-title">{text}</span>
+                    <div className={`icons-wrapper ${fadeInLeftVisible && 'animate__animated animate__fadeInLeft'}`}>
+                        {fadeInLeftVisible && iconsData.map((icon) => (
+                            <IconComponent data={icon} key={icon.link}/>
+                        ))}
+                    </div>
                 </div>
                 <div className="img-wrapper">
                     <img src="../../src/assets/images/copy.jpg" alt="Image of myself"/>

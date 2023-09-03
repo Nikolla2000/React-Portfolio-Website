@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="icons-rights-container">
                 <div className="icons-container">
                     {iconsData.map((icon) => (
-                        <IconComponent data={icon} key={icon.link}/>
+                        <IconComponent data={icon} key={icon.link} hover='animate__animated animate__rotateIn'/>
                     ))}
                 </div>
                 <span>©2023. All Rights Reserved</span>
