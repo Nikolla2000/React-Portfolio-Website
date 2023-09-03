@@ -1,6 +1,10 @@
+import PageHeaderComponent from "../../Components/PageHeader/PageHeaderComponent"
+
 const AboutPage = () => {
     return (
-        <div>About Page</div>
+        <div className="about-page">
+            <PageHeaderComponent heading={{title: 'About Me', breadcrumb: 'About'}}/>
+        </div>
     )
 }
 

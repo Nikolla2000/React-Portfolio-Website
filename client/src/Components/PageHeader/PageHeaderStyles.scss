@@ -1,0 +1,36 @@
+@import "../../index.scss";
+
+.page-header {
+    background-color: $page-header;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    h1 {
+        color: $primary-white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        display: flex;
+        justify-content: center;
+        background-color: $page-header;
+    }
+
+    .breadcrumb-item::before {
+        color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        color: $primary-white;
+    }
+}
