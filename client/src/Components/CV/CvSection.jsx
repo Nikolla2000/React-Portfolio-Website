@@ -1,4 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
+import "./CvSectionStyles.scss"
 
 const CvSection = () => {
     return (
