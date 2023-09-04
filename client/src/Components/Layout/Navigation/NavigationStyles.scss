@@ -24,6 +24,7 @@ nav {
         display: flex;
         gap: 25px;
         margin-bottom: 0px;
+        align-items: center;
   
         .active {
           color: $third-red;
@@ -35,6 +36,15 @@ nav {
           color: $primary-white;
           text-transform: uppercase;
           font-weight: 600;
+
+          &:nth-of-type(4) {
+            margin-left:30px;
+          }
+
+          &:last-of-type {
+            border: 1px solid $primary-white;
+            padding: 6px 20px;
+          }
         }
       }
     }
@@ -43,12 +53,20 @@ nav {
     //Nav styles when not on home page
     .white-nav {
       background-color: $primary-white;
-
+      
+    }
+    
+    .white-a{
+      color:$primary-black !important;
+      font-weight: bolder !important;
+      border-color: $primary-black !important; 
     }
 
-    a{
-      color:$primary-black;
+    .active {
+      color: $third-red !important;
+      font-weight: bolder;
     }
+
 
     .mobile-menu-btn {
       color: $primary-white;

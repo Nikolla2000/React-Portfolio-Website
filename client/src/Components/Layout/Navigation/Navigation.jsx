@@ -8,8 +8,9 @@ import "./NavigationStyles.scss"
 const Navigation = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     const location = useLocation()
-
     const alternativeNavStyles = location.pathname !== '/' ? 'white-nav' : ''
+    const navLinkClassName = alternativeNavStyles ? "white-a" : "";
+
     return (
         <nav className={alternativeNavStyles}>
             <div className='nav-wrapper'>
@@ -23,7 +24,8 @@ const Navigation = () => {
                         <NavLink
                             key={index + 1}
                             to={element.path}
-                            className={({ isActive }) => (isActive && "active")}
+                            className={navLinkClassName}
+                            activeClassName="active"
                         >
                             {element.name}
                         </NavLink>
