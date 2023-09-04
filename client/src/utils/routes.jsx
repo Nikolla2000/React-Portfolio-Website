@@ -26,7 +26,7 @@ const routes = {
     contact: {
         path: "/contact",
         element: <ContactPage/>,
-        name: "contact",
+        name: "lets talk",
         includeInNav: true,
     },
     errorPage: {
