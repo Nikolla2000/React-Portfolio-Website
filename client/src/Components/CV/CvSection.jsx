@@ -23,14 +23,12 @@ const CvSection = () => {
                                     <li>Crafting Digital Solutions</li>
                                     <li>Commitment to Excellence</li>
                                  </ul>
-                                 <Button variant="danger">
-                                    <a
-                                        href="/Nikola'sResume.pdf"
-                                        download="Nikola'sResume.pdf"  
-                                        className="download-button">
-                                        Download PDF
-                                    </a>
-                                 </Button>
+                                <a
+                                    href="/Nikola'sResume.pdf"
+                                    download="Nikola'sResume.pdf"  
+                                    className="download-button">
+                                    Download CV
+                                </a>
                         </div>
                     </Col>
                 </Row>
