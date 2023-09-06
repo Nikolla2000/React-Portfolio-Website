@@ -1,0 +1,92 @@
+@import "../../../index.scss";
+
+
+.about-header {
+    color: $page-header;
+    font-weight: bold;
+    font-size: 3.7em;
+    text-align: center;
+    margin-top:50px;
+}
+
+.about-page-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.skills-section-about {
+    background-color: #f9f9f9;
+    
+
+    .carousel-item{
+        
+        .all-skills-wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap:50px;
+            margin-top:100px;
+        }
+        .skill-wrapper {
+            // width:200px;
+            // height: 180px;
+            display: inline-block;
+            text-align: center;
+
+            img {
+                // width: 100
+                width: 200px;
+                height: 100%;
+                height: 200px;
+            }
+
+            .skill-name {
+                color: $page-header;
+                font-weight: bold;
+                font-size: 1.5em;
+                display: block;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-prev-icon,
+    .carousel-control-next {
+        span {
+            background-color: rgba(7, 6, 64, 0.8)!important;
+        }
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768px (typical tablet portrait) */
+
+    .about-header {
+      /* Adjust the header font size for smaller screens */
+      font-size: 24px;
+    }
+
+    .all-skills-wrapper {
+      /* Adjust the layout for smaller screens */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .skill-wrapper {
+      margin-bottom: 20px;
+
+      img {
+        max-width: 200px;
+      }
+
+      .skill-name {
+        font-size: 16px;
+      }
+    }
+  }
