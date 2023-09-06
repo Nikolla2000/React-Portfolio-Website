@@ -18,9 +18,9 @@ const routes = {
         includeInNav: true,
     },
     work: {
-        path: "/work",
+        path: "/portfolio",
         element: <WorkPage/>,
-        name: "work",
+        name: "portfolio",
         includeInNav: true,
     },
     contact: {
