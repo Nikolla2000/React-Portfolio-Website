@@ -1,6 +1,8 @@
 import CvSection from "../../Components/CV/CvSection"
 import PageHeaderComponent from "../../Components/PageHeader/PageHeaderComponent"
+import ServicesSection from "./services/ServicesSection"
 import SkillsSection from "./skills/SkillsSection"
+import Footer from "../../Components/Footer/Footer"
 
 const AboutPage = () => {
     return (
@@ -8,6 +10,8 @@ const AboutPage = () => {
             <PageHeaderComponent heading={{title: 'About Me', breadcrumb: 'About'}}/>
             <CvSection/>
             <SkillsSection/>
+            <ServicesSection/>
+            <Footer/>
         </div>
     )
 }

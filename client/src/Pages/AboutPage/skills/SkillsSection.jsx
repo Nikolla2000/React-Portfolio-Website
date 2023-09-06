@@ -6,7 +6,7 @@ import "./SkillsSectionStyles.scss"
 
 const SkillsSection = () => {
     return (
-        <section className="skills-section-about">
+        <section className="skills-section-about about-page-section">
             <h2 className="about-header">My Skills</h2>
             <Carousel>
             {dividedSkillsData.map((dataSet, index) => (

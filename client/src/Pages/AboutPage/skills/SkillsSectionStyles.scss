@@ -4,13 +4,18 @@
 .about-header {
     color: $page-header;
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 3.7em;
+    text-align: center;
+    margin-top:50px;
+}
+
+.about-page-section {
+    text-align: center;
+    padding: 50px 0;
 }
 
 .skills-section-about {
     background-color: #f9f9f9;
-    text-align: center;
-    padding: 50px 0;
     
 
     .carousel-item{
@@ -20,7 +25,7 @@
             justify-content: space-evenly;
             align-items: center;
             gap:50px;
-            margin-top:50px;
+            margin-top:100px;
         }
         .skill-wrapper {
             // width:200px;
