@@ -15,6 +15,7 @@ const portfolioData = [
     },
     {
         imgPath: "../../../src/assets/images/project3.mp4",
+        alternateImgPath:"../../../src/assets/images/projects/movies-project.png",
         title: "Editable Movie Database",
         description: "Fetched data from an API displayed in a list of products with CRUD operations",
         video: true,
