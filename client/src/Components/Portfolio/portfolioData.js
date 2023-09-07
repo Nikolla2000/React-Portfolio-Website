@@ -1,6 +1,7 @@
 const portfolioData = [
     {
         imgPath: "../../../src/assets/images/project1-video.mp4",
+        alternateImgPath: "../../../src/assets/images/projects/restaurant-project.png",
         title: "Fullstack Pizzeria Website",
         description: "Pizzeria Website for which I contributed in a team in a Javascript Bootcamp",
         video: true,
@@ -23,7 +24,7 @@ const portfolioData = [
         imgPath: "../../../src/assets/images/project4.webp",
         title: "Calculator",
         description: "Vanilla Javascript Calculator with 4 basic operations",
-        link: "https://github.com/Nikolla2000/Calculator"
+        link: "https://github.com/Nikolla2000/Calculator-Vanilla-JS"
     },
 ];
 

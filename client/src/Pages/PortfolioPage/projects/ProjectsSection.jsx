@@ -1,5 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import portfolioData from "../../../Components/Portfolio/portfolioData";
+import ProjectComponent from "./ProjectComponent";
+import "./ProjectsSection.scss"
 
 
 const ProjectsSection = () => {
@@ -8,7 +10,9 @@ const ProjectsSection = () => {
             <Container>
                 <Row>
                     {portfolioData.map((project) => (
-                        <p>{project.title}</p>
+                        <Col key={project.imgPath}>
+                            <ProjectComponent data={project} />
+                        </Col>
                     ))}
                 </Row>
             </Container>
