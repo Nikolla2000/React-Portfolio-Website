@@ -1,6 +1,6 @@
 import HomePage from "../Pages/HomePage/HomePage";
 import AboutPage from "../Pages/AboutPage/AboutPage";
-import WorkPage from "../Pages/WorkPage/WorkPage";
+import PortfolioPage from "../Pages/PortfolioPage/PortfolioPage";
 import ContactPage from "../Pages/ContactPage/ContactPage";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
@@ -19,7 +19,7 @@ const routes = {
     },
     work: {
         path: "/portfolio",
-        element: <WorkPage/>,
+        element: <PortfolioPage/>,
         name: "portfolio",
         includeInNav: true,
     },
