@@ -3,10 +3,17 @@
 .all-projects-wrapper {
     padding: 100px 0;
 
+    h4 {
+        color: $background-dark-blue;
+        font-weight: bold;
+        text-align: center;
+    }
+
     .project-wrapper {
         width: 300px;
         height: 200px;
         position: relative;
+        margin: 0 auto 30px;
 
         &::before {
             content: '';
@@ -69,5 +76,15 @@
                 z-index: 5;
             }
         }
+    }
+
+    .viewmore-button {
+        text-decoration: none;
+        
+            button {
+                display: block;
+                border-radius:0;
+                margin: 0 auto;
+            }
     }
 }
