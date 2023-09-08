@@ -1,5 +1,6 @@
 const portfolioData = [
     {
+        id:1,
         imgPath: "../../../src/assets/images/project1-video.mp4",
         alternateImgPath: "../../../src/assets/images/projects/restaurant-project.png",
         title: "Fullstack Pizzeria Website",
@@ -8,12 +9,14 @@ const portfolioData = [
         link: "https://github.com/advanceacademy/bootcamp-js-june-23"
     },
     {
+        id:2,
         imgPath: "../../../src/assets/images/project2.png",
         title: "React CRUD App",
         description: "Fetched data from an API displayed in a list of products with CRUD operations",
         link: "https://github.com/Nikolla2000/React-crud-app"
     },
     {
+        id:3,
         imgPath: "../../../src/assets/images/project3.mp4",
         alternateImgPath:"../../../src/assets/images/projects/movies-project.png",
         title: "Editable Movie Database",
@@ -22,6 +25,7 @@ const portfolioData = [
         link: "https://github.com/Nikolla2000/CRUD-Movie-App"
     },
     {
+        id:4,
         imgPath: "../../../src/assets/images/project4.webp",
         title: "Calculator",
         description: "Vanilla Javascript Calculator with 4 basic operations",
