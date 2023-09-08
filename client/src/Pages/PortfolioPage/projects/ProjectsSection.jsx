@@ -15,7 +15,7 @@ const ProjectsSection = () => {
                         </Col>
                     ))}
                     <a href="https://github.com/Nikolla2000" 
-                        className="viewmore-button"
+                        className="viewmore-button mt-5"
                         target="_blank">
                         <Button variant="danger">View more...</Button>
                     </a>

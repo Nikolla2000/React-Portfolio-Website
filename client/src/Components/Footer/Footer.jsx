@@ -31,7 +31,7 @@ const Footer = () => {
                         <IconComponent data={icon} key={icon.link} hover='animate__animated animate__rotateIn'/>
                     ))}
                 </div>
-                <span>©2023. All Rights Reserved</span>
+                <span>©{new Date().getFullYear()}. All Rights Reserved</span>
             </div>
         </footer>
     );
