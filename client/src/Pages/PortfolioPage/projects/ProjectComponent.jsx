@@ -17,7 +17,7 @@ const ProjectComponent = ({ data }) => {
                 data.alternateImgPath 
                 : data.imgPath} alt="Project image"/>
             {isImgHovered && (
-                <Link to={`/portfolio/project${data.id}`}>
+                <Link to={`/portfolio/project/${data.id}`}>
                     <div className="icon">
                         <FontAwesomeIcon icon={faAngleRight} style={{color: "#f1f4f8",}} />
                     </div>

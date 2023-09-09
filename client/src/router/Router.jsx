@@ -13,6 +13,7 @@ const Router = createBrowserRouter([
             { index: true, element: routes.home.element},
             { path: routes.about.path, element: routes.about.element},
             { path: routes.work.path, element: routes.work.element},
+            {path: routes.singleProjectPage.path, element: routes.singleProjectPage.element},
             { path: routes.contact.path, element: routes.contact.element},
         ]
     }
