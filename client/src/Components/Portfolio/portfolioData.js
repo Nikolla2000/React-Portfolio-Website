@@ -5,6 +5,8 @@ const portfolioData = [
         alternateImgPath: "../../../src/assets/images/projects/restaurant-project.png",
         title: "Fullstack Pizzeria Website",
         description: "Pizzeria Website for which I contributed in a team in a Javascript Bootcamp",
+        detailedDescription: "The Fullstack Pizzeria Website is a collaborative effort created during a Javascript Bootcamp. This dynamic and user-friendly website serves as an online platform for a fictional pizzeria, showcasing the team's proficiency in web development. It features an interactive menu, online ordering, real-time order tracking, sending a contact emails and a seamless user experience. The project highlights the use of modern web technologies and teamwork in building a comprehensive web application. It's using React for the frontend and ExpressJS for the backend. Explore the codebase on GitHub to see how we brought this delightful pizzeria experience to life.",
+        skillsDemonstrated: "This project demonstrates the skills and knowledge acquired during the bootcamp, including HTML, CSS, JavaScript, React, NodeJS and teamwork in a collaborative development environment.",
         video: true,
         link: "https://github.com/advanceacademy/bootcamp-js-june-23"
     },
