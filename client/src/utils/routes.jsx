@@ -3,6 +3,7 @@ import AboutPage from "../Pages/AboutPage/AboutPage";
 import PortfolioPage from "../Pages/PortfolioPage/PortfolioPage";
 import ContactPage from "../Pages/ContactPage/ContactPage";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import SingleProjectPage from "../Pages/PortfolioPage/singleProjectPage/SingleProjectPage";
 
 const routes = {
     home: {
@@ -22,6 +23,12 @@ const routes = {
         element: <PortfolioPage/>,
         name: "portfolio",
         includeInNav: true,
+    },
+    singleProjectPage: {
+        path: "/portfolio/project/:projectId",
+        element: <SingleProjectPage/>,
+        name: "",
+        includeInNav: false,
     },
     contact: {
         path: "/contact",
