@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import portfolioData from "../../../Components/Portfolio/portfolioData";
 import { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./SingleProjectStyles.scss";
 
 const SingleProjectPage = () => {
@@ -26,13 +28,20 @@ const SingleProjectPage = () => {
                     </div>   
                     <Container>
                         <Row>
-                            <Col>
+                            <Col lg={6} xs={12}>
                                 <h4 className="mb-5">Description</h4>
                                 <p>{projectData.detailedDescription}</p>
                                 <p className="mt-5">{projectData.skillsDemonstrated}</p>
-                                <Button>Github</Button>
+                                <div className="view-github-button">
+                                    <a href={projectData.link} target="_blank">
+                                        <div className="icon">
+                                            <FontAwesomeIcon icon={faAngleRight} style={{color: "#f1f4f8",}} />
+                                        </div>
+                                        <span>View on GitHub</span>
+                                    </a>
+                                </div>
                             </Col>
-                            <Col>
+                            <Col lg={6} xs={12}>
                                 <h4 className="mb-5">Key Features</h4>
                                 {projectData.keyFeatures && (
                                     <ul>

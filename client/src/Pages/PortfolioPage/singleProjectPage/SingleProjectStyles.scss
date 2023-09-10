@@ -31,7 +31,7 @@
 
     h4 {
         text-align: center;
-        font-size: 2em;
+        font-size: 2.2em;
         font-weight: bold;
         color:$background-dark-blue;
     }
@@ -47,5 +47,57 @@
 
     p, li {
         line-height: 30px;
+        color: $secondary-dark-grey;
+    }
+
+    .col-lg-6 {
+        position: relative;
+    }
+
+    .view-github-button {
+        position: relative;
+        height: 100px;
+
+        a {
+            position: absolute;
+            top: 40%;
+            left: 27%;
+            width: 200px;
+            text-decoration: none;
+            color: $background-dark-blue;
+            z-index: 5;
+    
+            span {
+                position: absolute;
+                left: 25%;
+                top:15%;
+            }
+    
+            &:hover {
+                transition: color 5s ease-in-out;
+            }
+    
+            .icon {
+                display: inline-block;
+                background: linear-gradient(89.8deg, rgb(195, 67, 129) 11%, rgb(90, 43, 186) 83.4%);
+                padding: 7px 14px;
+                border-radius: 50px;
+                width: 40px;
+                transition: width 0.3s ease; 
+            }
+    
+            span {
+                font-weight: bold;
+            }
+    
+            &:hover .icon {
+                width: 100%; 
+            }
+    
+            &:hover span {
+                color: $primary-white;
+                z-index: 5;
+            }
+        }
     }
 }
