@@ -30,6 +30,16 @@ const SingleProjectPage = () => {
                             <p>{projectData.detailedDescription}</p>
                             <Button>Github</Button>
                             <p>{projectData.skillsDemonstrated}</p>
+                            <h4>Key Features</h4>
+                            {projectData.keyFeatures && (
+                                <ul>
+                                    {Object.entries(projectData.keyFeatures).map(([name, feature], index) => (
+                                    <li key={index}>
+                                        <strong>{name}:</strong> {feature}
+                                    </li>
+                                    ))}
+                                </ul>
+                            )}
                         </Col>
                     </Row>
                 </Container>

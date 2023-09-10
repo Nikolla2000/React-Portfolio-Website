@@ -7,6 +7,14 @@ const portfolioData = [
         description: "Pizzeria Website for which I contributed in a team in a Javascript Bootcamp",
         detailedDescription: "The Fullstack Pizzeria Website is a collaborative effort created during a Javascript Bootcamp. This dynamic and user-friendly website serves as an online platform for a fictional pizzeria, showcasing the team's proficiency in web development. It features an interactive menu, online ordering, real-time order tracking, sending a contact emails and a seamless user experience. The project highlights the use of modern web technologies and teamwork in building a comprehensive web application. It's using React for the frontend and ExpressJS for the backend. Explore the codebase on GitHub to see how we brought this delightful pizzeria experience to life.",
         skillsDemonstrated: "This project demonstrates the skills and knowledge acquired during the bootcamp, including HTML, CSS, JavaScript, React, NodeJS and teamwork in a collaborative development environment.",
+        keyFeatures: {
+            productManagement: "Users can perform CRUD operations on a list of products, including creating, reading, updating, and deleting entries.",
+            detailedProductInfo: "Each product entry includes essential details, such as a name, description, and other pertinent information.",
+            intuitiveUI: "The app features a user-friendly interface with clear navigation and input forms for adding or editing product information.",
+            dataFetching: "The application fetches product data from a dummy JSON API, providing real-world data management experience.",
+            responsiveDesign: "Designed with responsiveness in mind, the app adapts to various screen sizes, ensuring accessibility on both desktop and mobile devices.",
+            enhancedLearning: "Building this CRUD app enhances understanding of React components, state management, and HTTP requests, serving as a valuable learning experience."
+        },
         video: true,
         link: "https://github.com/advanceacademy/bootcamp-js-june-23"
     },
