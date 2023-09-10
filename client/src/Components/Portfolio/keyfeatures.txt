@@ -1,0 +1,54 @@
+CRUD APP 
+Product Management: Users can perform CRUD operations on a list of products, including creating, reading, updating, and deleting entries.
+
+Detailed Product Information: Each product entry includes essential details, such as a name, description, and other pertinent information.
+
+Intuitive User Interface: The app features a user-friendly interface with clear navigation and input forms for adding or editing product information.
+
+Data Fetching: The application fetches product data from a dummy JSON API, providing real-world data management experience.
+
+Responsive Design: Designed with responsiveness in mind, the app adapts to various screen sizes, ensuring accessibility on both desktop and mobile devices.
+
+Enhanced Learning: Building this CRUD app enhances understanding of React components, state management, and HTTP requests, serving as a valuable learning experience.
+
+
+
+
+Movie app 
+
+Movie Management: Users can perform CRUD operations on a list of movies, including creating, reading, updating, and deleting entries.
+
+Rating System: The app includes a rating feature, enabling users to rate movies and share their opinions.
+
+Trailer Playback: Each movie entry may include a trailer link, providing an immersive viewing experience.
+
+Comment Section: Users can add comments to share thoughts, recommendations, or reviews about movies.
+
+Engaging Movie Exploration: Whether users are cinephiles or casual viewers, this app offers an engaging platform for discovering and managing their favorite movies.
+
+
+Calculator
+
+Four Arithmetic Operations: The calculator supports the four core arithmetic operations: addition, subtraction, multiplication, and division. Users can easily switch between these functions to perform calculations.
+
+User-Friendly Interface: The user interface is intuitive and straightforward. It features a classic layout with numeric keys, operator buttons, and a display screen that showcases both input and results.
+
+Real-Time Feedback: As users input numbers and operators, the calculator provides real-time feedback, displaying the equation as it's entered. This allows for quick and accurate adjustments.
+
+Clear and Reset Function: In case of errors or to start a new calculation, the calculator offers a clear and reset function. Users can easily clear the current input or reset the calculator to its initial state.
+
+History: The calculator maintains a history of previous calculations, making it convenient to review or reuse past results. Users can scroll through their calculation history and select previous equations for reference or modification.
+
+Pizzeria 
+
+Interactive Menu: Users can explore an interactive menu featuring a mouthwatering array of pizzas and other delectable items, complete with vivid images and detailed descriptions.
+
+Online Ordering: Customers have the convenience of placing orders online, selecting their desired items, customizing preferences, and scheduling deliveries or pickups.
+
+Real-time Order Tracking: The website incorporates a real-time order tracking system, allowing customers to monitor the progress of their orders from preparation to delivery.
+
+Register/Login: Customers can create accounts or log in to access additional features, such as order history, personalized recommendations, and a streamlined checkout process.
+
+Contact and Feedback: Customers can reach out to the pizzeria through the website, send inquiries, and provide feedback. The "Contact Us" section offers a direct line of communication.
+
+Responsive Design: The website is designed to be responsive, ensuring an appealing and functional experience across different devices.
