@@ -7,8 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./SingleProjectStyles.scss";
 
 const SingleProjectPage = () => {
-    const { projectId } = useParams()
-    const [projectData, setProjectData] = useState(undefined)
+    const { projectId } = useParams();
+    const [projectData, setProjectData] = useState(undefined);
+    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         setProjectData(portfolioData.find((project) => projectId == project.id))
@@ -20,10 +21,14 @@ const SingleProjectPage = () => {
                 <div className="single-project-page-wrapper">
                     <div className="single-project-header">
                         <h1>{projectData.title}</h1>
-                        <div className="project-img-wrapper">
+                        <div 
+                            className="project-img-wrapper"
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}>
                             {projectData.alternateImgPath ?
                                 <img src={projectData.alternateImgPath} alt={`${projectData.title} image`} /> 
                                 : <img src={projectData.imgPath} alt={`${projectData.title} image`} />}
+                                {isHovered && <Button>Watch Video Preview</Button>}
                         </div>
                     </div>   
                     <Container>
