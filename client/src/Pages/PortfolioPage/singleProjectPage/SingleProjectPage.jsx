@@ -5,11 +5,13 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./SingleProjectStyles.scss";
+import VideoPreviewModal from "./VideoPreviewModal";
 
 const SingleProjectPage = () => {
     const { projectId } = useParams();
     const [projectData, setProjectData] = useState(undefined);
     const [isHovered, setIsHovered] = useState(false);
+    const [showVideoModal, setShowVideoModal] = useState(false)
 
     useEffect(() => {
         setProjectData(portfolioData.find((project) => projectId == project.id))
@@ -28,7 +30,11 @@ const SingleProjectPage = () => {
                             {projectData.alternateImgPath ?
                                 <img src={projectData.alternateImgPath} alt={`${projectData.title} image`} /> 
                                 : <img src={projectData.imgPath} alt={`${projectData.title} image`} />}
-                                {isHovered && <Button>Watch Video Preview</Button>}
+                                {isHovered && 
+                                    <Button onClick={() => setShowVideoModal(true)}>
+                                    Watch Video Preview
+                                    </Button>}
+                                    {showVideoModal && <VideoPreviewModal video={projectData.videoPath}/>}
                         </div>
                     </div>   
                     <Container>
