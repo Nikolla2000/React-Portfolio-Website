@@ -1,22 +1,21 @@
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-const VideoPreviewModal = (props) => {
+
+const VideoPreviewModal = ({ video, show, setShow })  => {
+    const handleClose = () => setShow(false);
+
     return (
-        <div
-      className="modal show"
-      style={{ display: 'block', position: 'initial' }}
-    >
-      <Modal.Dialog>
+         <>
+      <Modal show={show} onHide={handleClose} className="video-modal" size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered>
         <Modal.Header closeButton>
         </Modal.Header>
-
         <Modal.Body>
-          <video src={props.video} autoPlay loop muted/>
+            <video src={video} autoPlay loop muted className='modal-video'/>
         </Modal.Body>
-
-      </Modal.Dialog>
-    </div>
+      </Modal>
+    </>
     );
 };
 

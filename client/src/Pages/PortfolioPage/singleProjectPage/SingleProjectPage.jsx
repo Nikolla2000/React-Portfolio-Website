@@ -6,6 +6,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./SingleProjectStyles.scss";
 import VideoPreviewModal from "./VideoPreviewModal";
+import Footer from "../../../Components/Footer/Footer";
 
 const SingleProjectPage = () => {
     const { projectId } = useParams();
@@ -34,8 +35,9 @@ const SingleProjectPage = () => {
                                     <Button onClick={() => setShowVideoModal(true)}>
                                     Watch Video Preview
                                     </Button>}
-                                    {showVideoModal && <VideoPreviewModal video={projectData.videoPath}/>}
                         </div>
+                                        {showVideoModal && <VideoPreviewModal video={projectData.videoPath}
+                                         show={showVideoModal} setShow={setShowVideoModal}/>}
                     </div>   
                     <Container>
                         <Row>
@@ -68,6 +70,7 @@ const SingleProjectPage = () => {
                     </Container>
                 </div>
             )}
+            <Footer/>
         </>
     );
 };
