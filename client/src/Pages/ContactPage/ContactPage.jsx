@@ -1,6 +1,11 @@
+import PageHeaderComponent from "../../Components/PageHeader/PageHeaderComponent"
+
+
 const ContactPage = () => {
     return (
-        <div>Contact Page</div>
+        <div className="contact-page-wrapper">
+            <PageHeaderComponent heading={{title: "Contact me", breadcrumb: "Contact"}}/>
+        </div>
     )
 }
 
