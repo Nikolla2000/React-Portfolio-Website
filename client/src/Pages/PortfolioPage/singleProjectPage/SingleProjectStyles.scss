@@ -3,6 +3,7 @@
 .single-project-page-wrapper {
     margin: 90px 0;
     background: linear-gradient(90deg, rgba(232,232,232,1) 57%, rgba(255,255,255,1) 91%);
+
     
     .single-project-header {
         background: url("../../../assets/images/footer-bg.png");
@@ -10,7 +11,7 @@
         padding-bottom: 50px;
         margin-bottom: 80px;
     }
-
+    
     h1 {
         font-size: 3em;
         padding: 70px 0;
@@ -23,16 +24,16 @@
         margin:0 auto;
         border:6px solid $primary-white;
         position: relative;
-
+        
         img {
             width: 100%;
             transition: filter 0.3s ease;
         }
-
+        
         &:hover img {
             filter: grayscale(100%);
         }
-
+        
         button {
             background: linear-gradient(108.4deg, rgb(253, 44, 56) 3.3%, rgb(176, 2, 12) 98.4%);
             font-weight: bold;
@@ -59,26 +60,26 @@
 
     ul {
         list-style-type: disc; 
-
+        
         ::marker, strong {
             color: $primary-pink;
         }
         
     }
-
+    
     p, li {
         line-height: 30px;
         color: $secondary-dark-grey;
     }
-
+    
     .col-lg-6 {
         position: relative;
     }
-
+    
     .view-github-button {
         position: relative;
         height: 100px;
-
+        
         a {
             position: absolute;
             top: 40%;
@@ -87,7 +88,7 @@
             text-decoration: none;
             color: $background-dark-blue;
             z-index: 5;
-    
+            
             span {
                 position: absolute;
                 left: 25%;
@@ -106,7 +107,7 @@
                 width: 40px;
                 transition: width 0.3s ease; 
             }
-    
+            
             span {
                 font-weight: bold;
             }
@@ -114,11 +115,26 @@
             &:hover .icon {
                 width: 100%; 
             }
-    
+            
             &:hover span {
                 color: $primary-white;
                 z-index: 5;
             }
+
         }
     }
 }
+
+//Modal Video
+
+.modal-video {
+    width: 100% !important;
+}
+
+
+
+
+
+       
+
+
