@@ -23,11 +23,11 @@ const ContactSection = () => {
                             <InfoItemComponent 
                                 infoName={"Residential Address"} 
                                 infoDetail={"Varna, Bulgaria"}
-                                iconImg={"../../../src/assets/images/info-icon-1.png"}/>
+                                infoIcon={"../../../src/assets/images/info-icon-1.png"}/>
                             <InfoItemComponent 
                                 infoName={"Office Email"} 
                                 infoDetail={"nikollla2000@abv.bg"}
-                                iconImg={"../../../src/assets/images/info-icon-2.png"}/>
+                                infoIcon={"../../../src/assets/images/info-icon-2.png"}/>
                             <InfoItemComponent 
                                 infoName={"Office Phone"} 
                                 infoDetail={"+359-899-470-320"}
