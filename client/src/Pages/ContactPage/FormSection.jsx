@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import inputConfigurations from "../../Components/Contact/formConfigurations";
 import FormBuilder from "../../Components/Contact/FormBuilder";
 import InfoItemComponent from "./InfoItemComponent";
@@ -16,6 +16,7 @@ const FormSection = () => {
                         <div className="contact-form">
                             <h2>Get In Touch</h2>
                             <FormBuilder configurations={inputConfigurations}/>
+                            <Button>Send Message</Button>
                         </div>
                     </Col>
                     <Col lg={6} md={12}>
