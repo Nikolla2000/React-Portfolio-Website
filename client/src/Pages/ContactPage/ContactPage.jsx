@@ -1,12 +1,13 @@
 import PageHeaderComponent from "../../Components/PageHeader/PageHeaderComponent"
-import ContactSection from "./ContactSection"
+import FormSection from "./FormSection"
+import "./ContactPageStyles.scss";
 
 
 const ContactPage = () => {
     return (
         <div className="contact-page-wrapper">
             <PageHeaderComponent heading={{title: "Contact me", breadcrumb: "Contact"}}/>
-            <ContactSection/>
+            <FormSection/>
         </div>
     )
 }

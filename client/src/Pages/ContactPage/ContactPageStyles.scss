@@ -1,0 +1,47 @@
+@import "../../index.scss";
+
+.contact-page-wrapper {
+
+    .info-item {
+        box-shadow: 0 10px 40px 0 rgba(50,50,50,.1);
+        padding: 33px 40px;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size:1.5em;
+            font-weight: bold;
+            color:#131058;
+            margin-bottom: 15px;
+        }
+
+        .info-wrap {
+            display: flex;
+            align-items: center;
+
+            .info-icon {
+                width: 90px;
+                height: 90px;
+                background: #fff;
+                line-height: 80px;
+                border-radius: 50%;
+                box-shadow: 0 10px 40px 0 rgba(50,50,50,.1);
+                text-align: center;
+                margin-right: 20px;
+    
+                img {
+                    max-width: 100%;
+                }
+            }
+    
+            .info-text {
+                color: #666;
+                
+                span {
+                    font-size: 1.2em;
+                }
+                
+            }
+        }
+
+    }
+}

@@ -4,9 +4,9 @@ import FormBuilder from "../../Components/Contact/FormBuilder";
 import InfoItemComponent from "./InfoItemComponent";
 
 
-const ContactSection = () => {
+const FormSection = () => {
     return (
-        <section className="contact-section-contactPage">
+        <section className="form-section-contactPage">
             <Container>
                 <Col lg={23}>
                     <h2>Lets Talk</h2> 
@@ -25,11 +25,11 @@ const ContactSection = () => {
                                 infoDetail={"Varna, Bulgaria"}
                                 infoIcon={"../../../src/assets/images/info-icon-1.png"}/>
                             <InfoItemComponent 
-                                infoName={"Office Email"} 
+                                infoName={"Official Email"} 
                                 infoDetail={"nikollla2000@abv.bg"}
                                 infoIcon={"../../../src/assets/images/info-icon-2.png"}/>
                             <InfoItemComponent 
-                                infoName={"Office Phone"} 
+                                infoName={"Official Phone"} 
                                 infoDetail={"+359-899-470-320"}
                                 infoIcon={"../../../src/assets/images/info-icon-3.png"}/>
                         </div>
@@ -40,4 +40,4 @@ const ContactSection = () => {
     );
 };
 
-export default ContactSection;
+export default FormSection;
