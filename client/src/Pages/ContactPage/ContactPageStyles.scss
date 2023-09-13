@@ -1,19 +1,28 @@
 @import "../../index.scss";
 
 .contact-page-wrapper {
+    padding: 100px 0;
+
+    .contact-page-heading {
+        font-size: 4em;
+        font-weight: bold;
+        color:#131058;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    h2 {
+        font-size:1.5em;
+        font-weight: bold;
+        color:#131058;
+        margin-bottom: 15px;
+    }
 
     //Info Item
     .info-item {
         box-shadow: 0 10px 40px 0 rgba(50,50,50,.1);
         padding: 33px 40px;
         margin-bottom: 30px;
-
-        h2 {
-            font-size:1.5em;
-            font-weight: bold;
-            color:#131058;
-            margin-bottom: 15px;
-        }
 
         .info-wrap {
             display: flex;
@@ -49,11 +58,32 @@
     //Contact Form 
 
     .contact-form {
+        box-shadow: 0 10px 40px 0 rgba(50,50,50,.1);
+        text-align: center;
+        padding: 57px 0;
+
+        h2 {
+            font-size: 1.9em;
+        }
+
+        input,textarea {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid $secondary-light-grey;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
         button {
             background-color: $primary-pink;
             border:none;
             font-weight: bold;
             padding: 15px 30px;
+            margin-top: 40px;
             border-radius: 25px;
             transition: background 0.3s ease;
 
