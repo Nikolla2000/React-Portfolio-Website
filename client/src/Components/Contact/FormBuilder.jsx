@@ -1,22 +1,8 @@
 import { useState, useEffect } from "react"
 import { Button, Form, FormControl, FormGroup, FormLabel } from "react-bootstrap"
 
-const FormBuilder = ({ configurations, focusedInput, setFocusedInput } ) => {
+const FormBuilder = ({ configurations } ) => {
     const [formData, setFormData] = useState({})
-
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (event.target.tagName !== "INPUT" && event.target.tagName !== "TEXTAREA") {
-                setFocusedInput("");
-            }
-        };
-
-        document.addEventListener("click", handleClickOutside);
-
-        return () => {
-            document.removeEventListener("click", handleClickOutside);
-        };
-    }, []);
 
     const handleInputChange = (event) => {
         const {name, value} = event.target;
@@ -29,10 +15,6 @@ const FormBuilder = ({ configurations, focusedInput, setFocusedInput } ) => {
     const onSubmit = (event) => {
         event.preventDefault()
         console.log(formData);
-    }
-
-    const onFocus = (event) => {
-        setFocusedInput(event.target.name)
     }
 
     return (
@@ -50,8 +32,7 @@ const FormBuilder = ({ configurations, focusedInput, setFocusedInput } ) => {
                     minLength={inputData.minLength && inputData.minLength}
                     maxLength={inputData.maxLength && inputData.maxLength}
                     value={formData[inputData.name] || ''}
-                    onChange={handleInputChange}
-                    onFocus={onFocus}/>
+                    onChange={handleInputChange}/>
              </FormGroup>) 
              : (
                 <FormControl 
@@ -64,8 +45,7 @@ const FormBuilder = ({ configurations, focusedInput, setFocusedInput } ) => {
                     minLength={inputData.minLength && inputData.minLength}
                     maxLength={inputData.maxLength && inputData.maxLength}
                     value={formData[inputData.name] || ''}
-                    onChange={handleInputChange}
-                    onFocus={onFocus}/>
+                    onChange={handleInputChange}/>
             ))}
         </Form>
     )
