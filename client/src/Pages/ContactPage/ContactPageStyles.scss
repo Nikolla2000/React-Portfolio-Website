@@ -22,7 +22,11 @@
     .info-item {
         box-shadow: 0 10px 40px 0 rgba(50,50,50,.1);
         padding: 33px 40px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 1.7em;
+        }
 
         .info-wrap {
             display: flex;
@@ -90,6 +94,15 @@
             &:hover {
                 background-color: #f87788;
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    .info-item {
+        h2 {
+            font-size: 1.5em !important;
         }
     }
 }
