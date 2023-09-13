@@ -1,17 +1,19 @@
 const inputConfigurations = [
   {
-    name: 'name',
+    name: 'first name',
     type: 'text',
     minLength: 2,
-    maxLength: 100
+    maxLength: 20
+  },
+  {
+    name: 'last name',
+    type: 'text',
+    minLength: 2,
+    maxLength: 20
   },
   {
     name: 'email',
     type: 'email'
-  },
-  {
-    name: 'number',
-    type: 'number'
   },
   {
     name: 'subject',

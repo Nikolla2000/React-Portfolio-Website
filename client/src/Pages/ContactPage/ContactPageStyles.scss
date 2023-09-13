@@ -55,7 +55,11 @@
             font-weight: bold;
             padding: 15px 30px;
             border-radius: 25px;
+            transition: background 0.3s ease;
 
+            &:hover {
+                background-color: #f87788;
+            }
         }
     }
 }
