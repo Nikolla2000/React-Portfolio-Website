@@ -1,24 +1,26 @@
 import React from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css'; 
 
 const StreetMap = () => {
-  const mapStyles = {
-    height: '400px',
-    width: '100%',
-  };
+    const position = [43.214, 27.914];
+    const mapboxAccessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
+    const mapboxStyleId = import.meta.env.VITE_MAPBOX_STYLE_ID;    
 
-  const defaultCenter = {
-    lat: 40.7128, 
-    lng: -74.0060, 
-  };
-
-  return (
-    <LoadScript key="AIzaSyBIpkvp4MAYqGvzt2wd3Akpq2S0Ikcm1Po">
-      <GoogleMap mapContainerStyle={mapStyles} zoom={10} center={defaultCenter}>
-        {/* Add map markers, polygons, or other map components here */}
-      </GoogleMap>
-    </LoadScript>
-  );
+    return (
+      <MapContainer 
+            center={position} 
+            zoom={13} 
+            style={{ height: '500px', width: '70vw', margin: '-20px auto 70px', zIndex: "1"}}>
+        <TileLayer
+            url={`https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=${mapboxAccessToken}`}
+            attribution='&copy; <a href="https://www.mapbox.com/">Mapbox</a> contributors'
+            id={mapboxStyleId}
+        />
+        <Marker position={position}>
+        </Marker>
+      </MapContainer>
+    );
 }
 
 export default StreetMap;
