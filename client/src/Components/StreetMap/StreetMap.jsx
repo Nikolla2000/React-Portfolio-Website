@@ -8,12 +8,12 @@ const StreetMap = () => {
   };
 
   const defaultCenter = {
-    lat: 40.7128, 
-    lng: -74.0060, 
+    lat: 40.7128,
+    lng: -74.0060,
   };
 
   return (
-    <LoadScript key="AIzaSyBIpkvp4MAYqGvzt2wd3Akpq2S0Ikcm1Po">
+    <LoadScript googleMapsApiKey="AIzaSyAua5Cs38XIfp_aV7t7WE68DK8jGqVZf5w">
       <GoogleMap mapContainerStyle={mapStyles} zoom={10} center={defaultCenter}>
         {/* Add map markers, polygons, or other map components here */}
       </GoogleMap>
