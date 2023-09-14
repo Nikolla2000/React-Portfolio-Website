@@ -6,7 +6,7 @@ const PortfolioSection = () => {
 
     return (
         <section className="portfolio-section">
-            <h1>My Work</h1>
+            <h1 className='portfolio-section-heading'>My Work</h1>
             <Carousel>
                 {portfolioData.map((project, index) => (
                     <Carousel.Item key={index}>
