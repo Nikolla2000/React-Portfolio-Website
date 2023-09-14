@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="icons-rights-container">
                 <div className="icons-container">
                     {iconsData.map((icon) => (
-                        <IconComponent data={icon} key={icon.link} hover='animate__animated animate__rotateIn'/>
+                        <IconComponent data={icon} key={icon.link} hover='animate__animated animate__rotateIn' footer/>
                     ))}
                 </div>
                 <span>©{new Date().getFullYear()}. All Rights Reserved</span>

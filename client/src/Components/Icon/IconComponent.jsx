@@ -4,7 +4,7 @@ import TrackVisibility from "react-on-screen";
 import 'animate.css'
 import { useState } from "react";
 
-const IconComponent = ({ data, hover }) => {
+const IconComponent = ({ data, hover, footer }) => {
     const [isHovered, setIsHovered] = useState(false)
 
     return (
@@ -15,7 +15,7 @@ const IconComponent = ({ data, hover }) => {
             className="icon-wrapper">
                 <FontAwesomeIcon 
                     icon={ data.icon } 
-                    className={`${hover ? isHovered ? hover : '' : ''} ${isVisible && 'animate__animated animate__rotateIn'}`} 
+                    className={`${hover ? isHovered ? hover : '' : ''} ${footer && isVisible ? 'animate__animated animate__rotateIn' : ''}`} 
                     onMouseEnter={() => setIsHovered(true)} 
                     onMouseLeave={() => setIsHovered(false)}/>
             </a>
