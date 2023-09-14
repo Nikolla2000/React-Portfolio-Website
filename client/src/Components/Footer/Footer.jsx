@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import "./FooterStyles.scss"
 import iconsData from './iconsData';
 import IconComponent from '../Icon/IconComponent';
-import { useState } from 'react';
+import TrackVisibility from 'react-on-screen';
+import "./FooterStyles.scss";
+import 'animate.css';
 
 const Footer = () => {
     const [arrowHovered, setArrowHovered] = useState(false)
@@ -15,15 +17,19 @@ const Footer = () => {
     return (
         <footer>
             <div 
-                className="up-arrow-container" 
+                className={'up-arrow-container'}
                 onClick={scrollToTop} 
                 onMouseEnter={() => setArrowHovered(true)}
                 onMouseLeave={() => setArrowHovered(false)}>
+            <TrackVisibility>
+                {({ isVisible }) =>
                 <FontAwesomeIcon 
                     icon={faArrowUp} 
                     style={{color: "#ffffff"}} 
-                    className={`fa-thin ${arrowHovered && 'bounce'}`}
+                    className={`fa-thin ${arrowHovered && 'bounce'} ${isVisible && 'animate__animated animate__bounce'}`}
                     />
+                }
+            </TrackVisibility>
             </div>
             <div className="icons-rights-container">
                 <div className="icons-container">
