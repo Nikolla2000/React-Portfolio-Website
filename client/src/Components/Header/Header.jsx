@@ -1,7 +1,6 @@
 import "./HeaderStyles.scss"
 import { useEffect, useState } from "react"
 import "animate.css"
-import TrackVisibility from "react-on-screen"
 import iconsData from "../Footer/iconsData"
 import IconComponent from "../Icon/IconComponent"
 
@@ -57,9 +56,7 @@ const Header = () => {
      
     return (
         <section className="header-section" >
-            <TrackVisibility>
-            {({ isVisible }) =>
-            <div className={`header-wrapper ${isVisible && "animate__animated animate__fadeInDown"}`}>
+            <div className={`header-wrapper animate__animated animate__fadeInDown`}>
                 <div className="heading">
                     <h1>Hi I'm <span>Nikola</span> Uzunov</h1>
                     <span className="sub-title">{text}</span>
@@ -73,8 +70,6 @@ const Header = () => {
                     <img src="../../src/assets/images/copy.jpg" alt="Image of myself"/>
                 </div>
             </div>
-            }
-            </TrackVisibility>
         </section>
     )
 }

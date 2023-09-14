@@ -2,12 +2,14 @@
 
 .portfolio-section {
     background-color: #121127;
+    padding: 50px 0;
 
     h1 {
         color: $primary-white;
         font-weight: bold;
-        font-size: 4em;
+        font-size: 4.5em;
         margin-left: 30px;
+        margin-bottom: 50px;
         padding: 40px 0;
     }
 
@@ -34,5 +36,12 @@
 
     .red-captions {
         color: $primary-red !important;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .portfolio-section-heading{
+        font-size: 3em !important;
+        text-align: center;
     }
 }
