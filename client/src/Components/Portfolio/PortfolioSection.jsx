@@ -1,6 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import portfolioData from './portfolioData';
 import "./PortfolioStyles.scss"
+import { Link } from 'react-router-dom';
 
 const PortfolioSection = () => {
 
@@ -11,7 +12,7 @@ const PortfolioSection = () => {
                 {portfolioData.map((project, index) => (
                     <Carousel.Item key={index}>
                         <div className="project-wrapper">
-                        <a href={project.link} target="_blank">
+                        <Link to={`/portfolio/project/${project.id}`}>
                         {project.video ? (
                             <video src={project.imgPath} title={project.title} autoPlay loop muted>
                                 Your browser does not support the video tag.
@@ -19,7 +20,7 @@ const PortfolioSection = () => {
                         ) : (
                             <img src={project.imgPath} alt={project.title} />
                         )}
-                        </a>
+                        </Link>
                         <Carousel.Caption>
                             <h3 className={`project-title ${index === 0 && "red-captions"}`}>{project.title}</h3>
                             <p className={`project-descr ${index === 0 && "red-captions"}`}>{project.description}</p>
