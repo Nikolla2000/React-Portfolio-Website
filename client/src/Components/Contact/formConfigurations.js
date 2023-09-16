@@ -17,7 +17,9 @@ const inputConfigurations = [
   },
   {
     name: 'subject',
-    type: 'text'
+    type: 'text',
+    minLength: 5,
+    maxLength: 100
   }, 
   {
     name:'message',
