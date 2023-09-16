@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
 import { Button, Form, FormControl, FormGroup, FormLabel } from "react-bootstrap"
 
-const FormBuilder = ({ configurations } ) => {
-    const [formData, setFormData] = useState({})
+const FormBuilder = ({ configurations, errorMsg, setErrorMsg } ) => {
+    const [formData, setFormData] = useState({});
+    const [errors, setErrors] = useState({});
 
     const handleInputChange = (event) => {
         const {name, value} = event.target;
@@ -14,6 +15,7 @@ const FormBuilder = ({ configurations } ) => {
 
     const onSubmit = (event) => {
         event.preventDefault()
+        setErrorMsg('big error')
         console.log(formData);
     }
 
@@ -47,6 +49,7 @@ const FormBuilder = ({ configurations } ) => {
                     value={formData[inputData.name] || ''}
                     onChange={handleInputChange}/>
             ))}
+            {/* <p className="error-message">error</p> */}
         </Form>
     )
 }

@@ -16,7 +16,8 @@ const ContactSection = () => {
 
   const [focusedInput, setFocusedInput] = useState("")
   const [formImgAnimation, setFormImgAnimation] = useState("")
-
+  const[errorMsg, setErrorMsg] = useState('')
+  
   const tick = () => {
     let i = loopNum % wordToDisplay.length;
     let fullText = wordToDisplay[i];
@@ -86,7 +87,9 @@ const ContactSection = () => {
             <FormBuilder 
                 configurations={inputConfigurations}
                 focusedInput={focusedInput}
-                setFocusedInput={setFocusedInput}/>
+                setFocusedInput={setFocusedInput}
+                errorMsg={errorMsg}
+                setErrorMsg={setErrorMsg}/>
             <Button 
               type="submit"
               form="contact-form"
@@ -94,6 +97,7 @@ const ContactSection = () => {
               className="form-submit-button"
               >Send Message
             </Button>
+            <p className="error-message mt-2">{errorMsg}</p>
           </div>
         </div>
       </section>

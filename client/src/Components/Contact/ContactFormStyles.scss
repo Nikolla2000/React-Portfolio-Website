@@ -68,7 +68,17 @@
             padding: 15px 25px;
             font-weight: bold;
         }
+    }
 
+    form {
+        position: relative;
+    }
+
+    .error-message {
+        color:$primary-white;
+        height: 5px;
+        font-weight: bold;
+        font-size: 0.9em;
     }
 }
 
