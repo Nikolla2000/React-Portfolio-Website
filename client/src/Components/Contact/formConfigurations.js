@@ -1,12 +1,12 @@
 const inputConfigurations = [
   {
-    name: 'first name',
+    name: 'firstName',
     type: 'text',
     minLength: 2,
     maxLength: 20
   },
   {
-    name: 'last name',
+    name: 'lastName',
     type: 'text',
     minLength: 2,
     maxLength: 20

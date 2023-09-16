@@ -13,6 +13,15 @@ const FormBuilder = ({ configurations, errorMsg, setErrorMsg } ) => {
         }))
     }
 
+    // Function which splits the field name by camelCase or underscore and join with space
+    const formatFieldName = (fieldName) => {
+        return fieldName.split(/(?=[A-Z])|_/).map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+    }
+
+    // const validateForm = () => {
+    //     const {firstName, lastName, email, subject, message}
+    // }
+
     const onSubmit = (event) => {
         event.preventDefault()
         setErrorMsg('big error')
@@ -30,7 +39,7 @@ const FormBuilder = ({ configurations, errorMsg, setErrorMsg } ) => {
                     name={inputData.name} 
                     id={inputData.name} 
                     as={inputData.type === 'textarea' && 'textarea'}
-                    placeholder={inputData.name.charAt(0).toUpperCase() + inputData.name.slice(1)}
+                    placeholder={formatFieldName(inputData.name)}
                     minLength={inputData.minLength && inputData.minLength}
                     maxLength={inputData.maxLength && inputData.maxLength}
                     value={formData[inputData.name] || ''}
@@ -43,7 +52,7 @@ const FormBuilder = ({ configurations, errorMsg, setErrorMsg } ) => {
                     name={inputData.name} 
                     id={inputData.name} 
                     as={inputData.type === 'textarea' ? 'textarea' : undefined}
-                    placeholder={inputData.name.charAt(0).toUpperCase() + inputData.name.slice(1)}
+                    placeholder={formatFieldName(inputData.name)}
                     minLength={inputData.minLength && inputData.minLength}
                     maxLength={inputData.maxLength && inputData.maxLength}
                     value={formData[inputData.name] || ''}
