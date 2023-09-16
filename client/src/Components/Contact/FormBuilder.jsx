@@ -5,6 +5,7 @@ const FormBuilder = ({ configurations, errorMsg, setErrorMsg } ) => {
     const [formData, setFormData] = useState({});
     const [errors, setErrors] = useState({});
 
+    //Function which tracks the value of each input in a state
     const handleInputChange = (event) => {
         const {name, value} = event.target;
         setFormData((prevValues) => ({
@@ -18,14 +19,51 @@ const FormBuilder = ({ configurations, errorMsg, setErrorMsg } ) => {
         return fieldName.split(/(?=[A-Z])|_/).map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
     }
 
-    // const validateForm = () => {
-    //     const {firstName, lastName, email, subject, message}
-    // }
+    const validateForm = () => {
+        const {firstName, lastName, email, subject, message} = formData;
+        const validationErrors = {};
 
+        //Validate firstName field
+        if (!firstName || firstName.length < 2 || firstName.length > 20) {
+            validationErrors.name = "First name is required and should be between 2 and 20 characters";
+            setErrorMsg(validationErrors.name);
+        }
+
+        //Validate lastName field
+        if (!lastName || lastName.length < 2 || lastName.length > 20) {
+            validationErrors.name = "Last name is required and should be between 2 and 20 characters";
+            setErrorMsg(validationErrors.name);
+        }
+
+        //Validate email field
+        if (!email) {
+            validationErrors.email = "Email is required and should be a valid email address"
+            setErrorMsg(validationErrors.email);
+        }
+
+        //Validate subject field
+        if (!subject || subject.length < 5 || subject.length > 100) {
+            validationErrors.subject = "Subject is required and should be between 5 and 100 characters"
+            setErrorMsg(validationErrors.subject);
+        }
+
+        //Validate message fields
+        if(!message || message.length < 10 || message.length > 500) {
+            validationErrors.message = "Message is required and should be between 10 and 500 characters"
+            setErrorMsg(validationErrors.message)
+        }
+
+        setErrors(validationErrors);
+        return Object.keys(errors).length === 0;
+    }
+
+    //Form Submit Function
     const onSubmit = (event) => {
         event.preventDefault()
-        setErrorMsg('big error')
-        console.log(formData);
+        if(validateForm()){
+            console.log(formData);
+            setFormData({})
+        }
     }
 
     return (
