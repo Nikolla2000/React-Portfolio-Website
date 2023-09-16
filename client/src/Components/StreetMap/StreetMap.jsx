@@ -4,8 +4,8 @@ import 'leaflet/dist/leaflet.css';
 
 const StreetMap = () => {
     const position = [43.214, 27.914];
-    const mapboxAccessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
-    const mapboxStyleId = import.meta.env.VITE_MAPBOX_STYLE_ID;    
+    const mapboxAccessToken = 'pk.eyJ1Ijoibmlrb2xsYTIwMCIsImEiOiJjbG1peDJidTAwZDEwM2VveHpyZm1ra3p6In0.ZHlGSMZ3zOjNzu1ox3Pa6w'
+    const mapboxStyleId = 'nikolla200/clmix079w00a701qt5hl646ds' 
 
     return (
       <MapContainer 
