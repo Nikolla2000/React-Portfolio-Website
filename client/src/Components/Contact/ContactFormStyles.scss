@@ -79,6 +79,7 @@
         height: 5px;
         font-weight: bold;
         font-size: 0.9em;
+        width: 300px;
     }
 }
 
@@ -144,5 +145,8 @@
                 width: 90%;
             }
         }
+    }
+    .error-message {
+        margin:0 auto;
     }
 }

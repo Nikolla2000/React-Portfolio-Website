@@ -68,6 +68,7 @@ const FormBuilder = ({ configurations, setErrorMsg, setFocusedInput } ) => {
 
     const onFocus = (event) => {
         setFocusedInput(event.target.name)
+        setErrorMsg('')
     }
 
     return (
