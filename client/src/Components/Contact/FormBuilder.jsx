@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react"
-import { Button, Form, FormControl, FormGroup, FormLabel } from "react-bootstrap"
+import { useState } from "react"
+import { Form, FormControl, FormGroup, FormLabel } from "react-bootstrap"
 
-const FormBuilder = ({ configurations, errorMsg, setErrorMsg } ) => {
+const FormBuilder = ({ configurations, setErrorMsg, setFocusedInput } ) => {
     const [formData, setFormData] = useState({});
     const [errors, setErrors] = useState({});
 
@@ -66,6 +66,10 @@ const FormBuilder = ({ configurations, errorMsg, setErrorMsg } ) => {
         }
     }
 
+    const onFocus = (event) => {
+        setFocusedInput(event.target.name)
+    }
+
     return (
         <Form onSubmit={onSubmit} id="contact-form">
             {configurations.map((inputData, index) => inputData.label ?
@@ -81,7 +85,8 @@ const FormBuilder = ({ configurations, errorMsg, setErrorMsg } ) => {
                     minLength={inputData.minLength && inputData.minLength}
                     maxLength={inputData.maxLength && inputData.maxLength}
                     value={formData[inputData.name] || ''}
-                    onChange={handleInputChange}/>
+                    onChange={handleInputChange}
+                    onFocus={onFocus}/>
              </FormGroup>) 
              : (
                 <FormControl 
@@ -94,7 +99,8 @@ const FormBuilder = ({ configurations, errorMsg, setErrorMsg } ) => {
                     minLength={inputData.minLength && inputData.minLength}
                     maxLength={inputData.maxLength && inputData.maxLength}
                     value={formData[inputData.name] || ''}
-                    onChange={handleInputChange}/>
+                    onChange={handleInputChange}
+                    onFocus={onFocus}/>
             ))}
             {/* <p className="error-message">error</p> */}
         </Form>

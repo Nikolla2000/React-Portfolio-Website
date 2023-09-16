@@ -49,8 +49,6 @@ const ContactSection = () => {
 
   const formImage = focusedInput === 'email' ?
   "../../src/assets/images/email.png"
-  : focusedInput === 'number' ?
-  "../../src/assets/images/phone.png"
   : focusedInput === 'subject' ?
   "../../src/assets/images/subject.png"
   : focusedInput === 'message' ?
@@ -75,7 +73,7 @@ const ContactSection = () => {
             {({ isVisible }) =>
           <div className="form-img">
             {window.innerWidth <= 900 && <h1 className="small-heading">Lets Talk</h1>}
-              {focusedInput === "name" ? 
+              {focusedInput === "firstName" || focusedInput === "lastName" ? 
               <p className={`name-animation ${isVisible && "animate__animated animate__backInLeft"}`}>{text}</p> 
               : <img 
                   src={formImage}
