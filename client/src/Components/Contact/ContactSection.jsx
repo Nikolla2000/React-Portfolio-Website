@@ -16,7 +16,8 @@ const ContactSection = () => {
 
   const [focusedInput, setFocusedInput] = useState("")
   const [formImgAnimation, setFormImgAnimation] = useState("")
-
+  const[errorMsg, setErrorMsg] = useState('')
+  
   const tick = () => {
     let i = loopNum % wordToDisplay.length;
     let fullText = wordToDisplay[i];
@@ -48,8 +49,6 @@ const ContactSection = () => {
 
   const formImage = focusedInput === 'email' ?
   "../../src/assets/images/email.png"
-  : focusedInput === 'number' ?
-  "../../src/assets/images/phone.png"
   : focusedInput === 'subject' ?
   "../../src/assets/images/subject.png"
   : focusedInput === 'message' ?
@@ -74,7 +73,7 @@ const ContactSection = () => {
             {({ isVisible }) =>
           <div className="form-img">
             {window.innerWidth <= 900 && <h1 className="small-heading">Lets Talk</h1>}
-              {focusedInput === "name" ? 
+              {focusedInput === "firstName" || focusedInput === "lastName" ? 
               <p className={`name-animation ${isVisible && "animate__animated animate__backInLeft"}`}>{text}</p> 
               : <img 
                   src={formImage}
@@ -86,7 +85,9 @@ const ContactSection = () => {
             <FormBuilder 
                 configurations={inputConfigurations}
                 focusedInput={focusedInput}
-                setFocusedInput={setFocusedInput}/>
+                setFocusedInput={setFocusedInput}
+                errorMsg={errorMsg}
+                setErrorMsg={setErrorMsg}/>
             <Button 
               type="submit"
               form="contact-form"
@@ -94,6 +95,7 @@ const ContactSection = () => {
               className="form-submit-button"
               >Send Message
             </Button>
+            <p className="error-message mt-2">{errorMsg}</p>
           </div>
         </div>
       </section>
