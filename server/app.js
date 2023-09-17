@@ -2,6 +2,7 @@ require("dotenv").config();
 require("express-async-errors");
 const express = require("express");
 const app = express();
+const cors = require('cors');
 
 //connectDB
 const connectDB = require("./db/connect");
@@ -15,6 +16,11 @@ const contactRouter = require('./routes/Contact.router')
 //
 app.use(express.static("./public"));
 app.use(express.json());
+
+//cors connection
+app.use(cors({
+  origin: 'http://localhost:5173'
+}))
 
 //routes
 app.use('/contacts', contactRouter)
