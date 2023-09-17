@@ -26,7 +26,7 @@ const sendContactEmail = async (req, res) => {
 
   res.status(StatusCodes.ACCEPTED).json({
     mailContent: newContactEmail,
-    message: "Contact mail sended successfully!",
+    message: "Contact mail sent successfully!",
   })
 
   const recipient = "nikolla.uzunov@gmail.com";
