@@ -40,10 +40,10 @@ function sendEmail(
   const handlebarOption = {
     viewEngine: {
       extName: ".handlebars",
-      partialsDir: path.resolve("../api/public/emailTemplate"),
+      partialsDir: path.resolve("../../server/public/emailTemplate"),
       defaultLayout: false,
     },
-    viewPath: path.resolve("../api/public/emailTemplate"),
+    viewPath: path.resolve("../../server/public/emailTemplate"),
     extName: ".handlebars",
   };
 
@@ -52,7 +52,7 @@ function sendEmail(
   const mailOptions = {
     from: `<${gcpUser}>`,
     to: recipient,
-    subject: "A Message From Boot Camp Team June 2023",
+    subject: "A Message From Nikola Uzunov",
     template: templateName,
     context: {
       name: name,
