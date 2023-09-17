@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Form, FormControl, FormGroup, FormLabel } from "react-bootstrap"
+import axios from "axios"
 
 const FormBuilder = ({ configurations, setErrorMsg, setFocusedInput } ) => {
     const [formData, setFormData] = useState({});
@@ -58,11 +59,18 @@ const FormBuilder = ({ configurations, setErrorMsg, setFocusedInput } ) => {
     }
 
     //Form Submit Function
-    const onSubmit = (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault()
         if(validateForm()){
-            console.log(formData);
-            setFormData({})
+            axios.post('http://localhost:3000/contacts/sendEmail', formData)
+            .then((res) => {
+                console.log(res.data);
+                setFormData({})
+                alert('Thank you for the email!')
+            })
+            .catch((error) => {
+                console.log({ error: error.message });
+            })
         }
     }
 
@@ -72,7 +80,7 @@ const FormBuilder = ({ configurations, setErrorMsg, setFocusedInput } ) => {
     }
 
     return (
-        <Form onSubmit={onSubmit} id="contact-form">
+        <Form onSubmit={handleSubmit} id="contact-form">
             {configurations.map((inputData, index) => inputData.label ?
              (<FormGroup controlId={inputData.name}>
                 <FormLabel>{inputData.label}</FormLabel>
