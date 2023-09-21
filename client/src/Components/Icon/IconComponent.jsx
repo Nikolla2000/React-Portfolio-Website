@@ -15,7 +15,7 @@ const IconComponent = ({ data, hover, footer }) => {
             className="icon-wrapper">
                 <FontAwesomeIcon 
                     icon={ data.icon } 
-                    className={`${hover ? isHovered ? hover : '' : ''} ${footer && isVisible ? 'animate__animated animate__rotateIn' : ''}`} 
+                    className={hover ? isHovered ? hover : '' : ''}  
                     onMouseEnter={() => setIsHovered(true)} 
                     onMouseLeave={() => setIsHovered(false)}/>
             </a>
