@@ -30,7 +30,7 @@ const sendContactEmail = async (req, res) => {
   })
 
   const recipient = "nikolla.uzunov@gmail.com";
-  const templateName = "contactTemplate";
+  const templateName = "contactEmailTemplate";
 
   sendEmail(
     newContactEmail.firstName,
