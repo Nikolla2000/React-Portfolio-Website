@@ -9,7 +9,7 @@ const HomePage = () => {
         <div className="homepage-wrapper">
             <Header/>
             <AboutSection/>
-            <PortfolioSection/>
+            {/* <PortfolioSection/> */}
             <ContactSection/>
             <Footer/>
         </div>
