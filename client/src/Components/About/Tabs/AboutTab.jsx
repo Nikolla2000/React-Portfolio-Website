@@ -4,10 +4,12 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
 import { useEffect, useState } from 'react';
 import "animate.css"
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const AboutTab = () => {
     const [showGlowingLight, setShowGlowingLight] = useState(true)
+    const [isButtonClicked, setIsButtonClicked] = useState(false)
+    const navigate = useNavigate()
 
     useEffect(() => {
         const handleResize = () => {
@@ -20,6 +22,13 @@ const AboutTab = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    const handleButtonClick = () => {
+        setIsButtonClicked(true)
+        setTimeout(() => {
+            navigate('/contact')
+        }, 1000)
+    }
 
     
     return (
@@ -37,11 +46,10 @@ const AboutTab = () => {
                         as a web developer. My primary focus is into frontend development. My appetite for growth and improvement drives me to explore this field further. 
                         Let's connect and create amazing digital experiences together!
                     </p>
-                    <Link to='/contact'>
-                        <Button className='lets-talk-btn'>
-                            Lets Talk
-                        </Button>
-                    </Link>
+                    <Button className={`lets-talk-btn ${isButtonClicked && 'animate__animated animate__rotateIn'}`}
+                    onClick={handleButtonClick}>
+                        Lets Talk
+                    </Button>
                     </Col>
                 </Row>
             </Container>
