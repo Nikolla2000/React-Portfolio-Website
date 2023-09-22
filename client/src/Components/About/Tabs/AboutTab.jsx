@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
 import { useEffect, useState } from 'react';
+import "animate.css"
 
 const AboutTab = () => {
     const [showGlowingLight, setShowGlowingLight] = useState(true)
@@ -25,7 +26,7 @@ const AboutTab = () => {
             <Container>
                 <Row className='justify-content-md-center align-items-center'>
                     <Col>
-                        <div className="about-img-wrapper">
+                        <div className="about-img-wrapper animate__animated animate__fadeInLeft">
                             <img src="../../../../src/assets/images/myImage4.png" alt="Image-of-myself" />
                         </div>
                     </Col>
