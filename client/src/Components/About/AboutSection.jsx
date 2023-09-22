@@ -14,7 +14,7 @@ const AboutSection = () => {
                 About Me
             </h1>
             <Tabs
-            defaultActiveKey="profile"
+            defaultActiveKey="about"
             id="justify-tab-example"
             className="mb-3"
             justify

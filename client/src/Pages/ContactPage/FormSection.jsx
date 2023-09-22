@@ -27,7 +27,7 @@ const FormSection = () => {
                                 infoIcon={"../../../src/assets/images/info-icon-1.png"}/>
                             <InfoItemComponent 
                                 infoName={"Official Email"} 
-                                infoDetail={"nikollla2000@abv.bg"}
+                                infoDetail={"nikollа.uzunov@gmail.com"}
                                 infoIcon={"../../../src/assets/images/info-icon-2.png"}/>
                             <InfoItemComponent 
                                 infoName={"Official Phone"} 
