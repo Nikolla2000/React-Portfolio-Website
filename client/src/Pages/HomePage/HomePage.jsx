@@ -3,15 +3,17 @@ import ContactSection from "../../Components/Contact/ContactSection"
 import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
 import PortfolioSection from "../../Components/Portfolio/PortfolioSection"
+import ErrorPage from "../ErrorPage/ErrorPage"
 
 const HomePage = () => {
     return (
         <div className="homepage-wrapper">
-            <Header/>
+            {/* <Header/>
             <AboutSection/>
             {/* <PortfolioSection/> */}
-            <ContactSection/>
-            <Footer/>
+            {/* <ContactSection/>
+            <Footer/> */} 
+            <ErrorPage/>
         </div>
     )
 }
