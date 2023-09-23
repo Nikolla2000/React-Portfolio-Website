@@ -11,8 +11,7 @@ const sendContactEmail = async (req, res) => {
   }
 
   const newContactEmail = await ContactEmail.create({
-    firstName: firstName,
-    lastName: lastName,
+    name: `${firstName} ${lastName}`,
     email: email,
     subject: subject,
     message: message,
@@ -33,8 +32,7 @@ const sendContactEmail = async (req, res) => {
   const templateName = "contactEmailTemplate";
 
   sendEmail(
-    newContactEmail.firstName,
-    newContactEmail.lastName,
+    newContactEmail.name,
     recipient,
     null,
     templateName,
