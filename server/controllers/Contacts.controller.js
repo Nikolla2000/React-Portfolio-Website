@@ -1,6 +1,6 @@
 const ContactEmail = require("../models/Contact-Email-Schema/Email.model");
 const { StatusCodes } = require("http-status-codes");
-const { BadRequestError } = require("../errors/bad-request")
+const { BadRequestError } = require("../errors")
 const sendEmail = require("./EmailSender")
 
 const sendContactEmail = async (req, res) => {

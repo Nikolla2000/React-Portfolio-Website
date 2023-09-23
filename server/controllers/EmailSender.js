@@ -40,10 +40,10 @@ function sendEmail(
   const handlebarOption = {
     viewEngine: {
       extName: ".handlebars",
-      partialsDir: path.resolve("../../server/public/emailTemplate"),
+      partialsDir: path.resolve("../../React-Portfolio-Website/server/public/emailTemplate"),
       defaultLayout: false,
     },
-    viewPath: path.resolve("../../server/public/emailTemplate"),
+    viewPath: path.resolve("../../React-Portfolio-Website/server/public/emailTemplate"),
     extName: ".handlebars",
   };
 
