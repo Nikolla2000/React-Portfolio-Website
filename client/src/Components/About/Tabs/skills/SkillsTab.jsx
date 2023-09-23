@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import SkillComponent from './SkillComponent';
 import skillsData from './skillsData';
 import 'animate.css';
+import TextShpere from './TextSphere';
 
 const SkillsTab = () => {
   const [fadeInLeftVisible, setFadeInLeftVisible] = useState(false);
@@ -29,7 +30,7 @@ const SkillsTab = () => {
   return (
     <div className="skills-wrapper">
       <Container>
-        <h2>Basic Frontend Technologies</h2>
+        {/* <h2>Basic Frontend Technologies</h2>
         <Row className={`justify-content-center ${fadeInLeftVisible && 'animate__animated animate__fadeInLeft'}`}>
           {skillsData.map((skill, index) => {
             if (skill.upperRow) {
@@ -55,7 +56,8 @@ const SkillsTab = () => {
             }
             return null; // Return null for upperRow skills
           })}
-        </Row>
+        </Row> */}
+        <TextShpere/>
       </Container>
     </div>
   );
