@@ -10,10 +10,12 @@ const SocialMediaTab = () => {
             <Row>
                 {socialMediaData.map((socialMedia, index) => {
                     return (
-                        <Col lg={6} md={6} className="mt-4 mb-5">
-                            <SocialMediaComponent
-                                data={socialMedia}
-                                key={index + 1}/>
+                        <Col 
+                            lg={6} 
+                            md={6} 
+                            className="mt-4 mb-5" 
+                            key={index + 1}>
+                            <SocialMediaComponent data={socialMedia}/>
                         </Col>
                     )
                 })}

@@ -10,10 +10,9 @@ const ServicesTab = () => {
             <Container>
                 <Row>
                     {servicesData.map((service, index) => (
-                        <Col md={6} lg={6}>
+                        <Col md={6} lg={6} key={index + 1}>
                             <ServiceComponent
-                                data={service}
-                                key={index + 1}/>
+                                data={service}/>
                         </Col>
                     ))}
                 </Row>

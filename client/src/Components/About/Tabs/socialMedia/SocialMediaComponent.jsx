@@ -1,8 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import 'animate.css';
+import { useState } from 'react';
 
 const SocialMediaComponent = ( {data} ) => {
+    const [isHovered, setIsHovered] = useState(false);
     return (
-        <div className="sm-wrapper">
+        <div 
+            className={`sm-wrapper ${isHovered && 'animate__animated animate__heartBeat'}`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}>
             <a href={data.link}
             target='_blank'
             rel="noopener noreferrer">
