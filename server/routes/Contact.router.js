@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const ContactEmail = require('../models/Contact-Email-Schema/Email.model');
-const { sendContactEmail, getAllContactEmails } = require("../controllers/Contacts.controller");
+const sendEmail = require("../controllers/Contacts.controller")
 
-router.get('/', getAllContactEmails)
+// router.get('/', getAllContactEmails)
 
-router.post('/sendEmail', sendContactEmail)
+router.post('/sendEmail', sendEmail)
 
 module.exports = router;
