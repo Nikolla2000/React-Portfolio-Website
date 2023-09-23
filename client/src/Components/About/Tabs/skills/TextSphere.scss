@@ -2,32 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
 
 .text-shpere {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #070640;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #070640;
+  margin: 50px 0;
+
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    height: 50vh; /* Adjust the height for mobile screens */
+  }
 }
 
 .tagcloud {
-    display: inline-block;
-    top: 0;
-    left: 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.0625em;
-    font-size: 1em;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  font-size: 1em;
+
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    font-size: 0.8em; /* Reduce font size for smaller screens */
+  }
 }
 
 /* Change color of each text in sphere on hover   */
 .tagcloud--item {
-    color: #00ffffff;
-    text-transform: uppercase;
+  color: #00ffffff;
+  text-transform: uppercase;
+
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    font-size: 0.7em; /* Adjust font size for smaller screens */
+  }
 }
 
 .tagcloud--item:hover {
-    color: #ff6347;
+  color: #ff6347;
 }

@@ -14,9 +14,12 @@
 
     ul {
         margin-top: 100px;
-
+        li {
+            z-index: 1;
+        }
         li button{
             color: $primary-white;
+            
 
             &:hover {
                 color: $primary-white;
