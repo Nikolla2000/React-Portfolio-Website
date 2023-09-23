@@ -36,6 +36,11 @@ nav {
           color: $primary-white;
           text-transform: uppercase;
           font-weight: 600;
+          transition: 0.3s;
+          
+          &:hover:not(:last-of-type){
+            transform: scale(1.2)
+          }
 
           &:nth-of-type(4) {
             margin-left:30px;
@@ -44,6 +49,11 @@ nav {
           &:last-of-type {
             border: 1px solid $primary-white;
             padding: 6px 20px;
+
+            &:hover {
+              color:$primary-red;
+              border-color: $primary-red;
+            }
           }
         }
       }
@@ -65,6 +75,7 @@ nav {
     .active {
       color: $third-red !important;
       font-weight: bolder;
+      border-color: $third-red !important; 
     }
 
 
