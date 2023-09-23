@@ -42,4 +42,16 @@ const sendEmail = async (req, res) => {
   }
 };
 
-module.exports = sendEmail;
+const getAllContactEmails = async(req, res) => {
+  try {
+    const allUsers = await ContactEmail.find({});
+    res.status(200).json(allUsers)
+  } catch (error) {
+    res.status(500).json({ error: error.message })
+  }
+}
+
+module.exports = {
+  getAllContactEmails,
+  sendEmail
+}
