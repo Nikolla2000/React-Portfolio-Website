@@ -9,7 +9,8 @@ const Navigation = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     const location = useLocation()
     const alternativeNavStyles = location.pathname !== '/' ? 'white-nav' : ''
-    const navLinkClassName = alternativeNavStyles ? "white-a" : "";
+    const navLinkClassName = showMobileMenu && location.pathname !== '/' ? 'white-links' : alternativeNavStyles ? "white-a" : "";
+    const blackBars = showMobileMenu && location.pathname !== '/' ? 'black-bars' : ''
 
     return (
         <nav className={alternativeNavStyles}>
@@ -32,9 +33,9 @@ const Navigation = () => {
                     ))}
                 </div>
             </div>
-            <div className="mobile-menu-wrapper">
+            <div className={`mobile-menu-wrapper ${blackBars}`}>
                 <FontAwesomeIcon
-                    className="mobile-menu-btn"
+                    className='mobile-menu-btn'
                     icon={faBars}
                     onClick={() => {
                         setShowMobileMenu(!showMobileMenu);

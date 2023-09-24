@@ -86,6 +86,7 @@ nav {
       position: absolute;
       top: 20px;
       right: 45px;
+
     }
   
     @media screen and (max-width: 1000px) {
@@ -95,6 +96,7 @@ nav {
   
       .mobile-menu-btn {
         display: block;
+        cursor: pointer;
       }
   
       .nav-menu,
@@ -116,5 +118,15 @@ nav {
         opacity: 1;
         transform: translateY(0);
       }
+    }
+  }
+
+  .white-links {
+    color:$primary-white;
+  }
+
+  .black-bars {
+    svg {
+      color: $primary-black !important;
     }
   }
