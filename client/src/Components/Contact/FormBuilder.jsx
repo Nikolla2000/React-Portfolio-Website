@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Form, FormControl, FormGroup, FormLabel } from "react-bootstrap"
 import axios from "axios"
 
-const FormBuilder = ({ configurations, setErrorMsg, setFocusedInput } ) => {
+const FormBuilder = ({ configurations, setErrorMsg, setFocusedInput, setIsButtonClicked } ) => {
     const [formData, setFormData] = useState({});
     const [errors, setErrors] = useState({});
 
@@ -67,6 +67,10 @@ const FormBuilder = ({ configurations, setErrorMsg, setFocusedInput } ) => {
                 console.log(res.data);
                 setFormData({})
                 alert('Thank you for the email!')
+                setIsButtonClicked(true)
+                setTimeout(() => {
+                    setIsButtonClicked(false)
+                },700)
             })
             .catch((error) => {
                 console.log({ error: error.message });

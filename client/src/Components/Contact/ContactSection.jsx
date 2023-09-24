@@ -9,6 +9,7 @@ import "./ContactFormStyles.scss"
 const ContactSection = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isButtonClicked, setIsButtonClicked] = useState(false)
   const wordToDisplay = ["Hi, My Name is ..."];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
@@ -46,6 +47,7 @@ const ContactSection = () => {
 
       return () => { clearInterval(ticker) }
   }, [text])
+  
 
   const formImage = focusedInput === 'email' ?
   "../../src/assets/images/email.png"
@@ -87,12 +89,13 @@ const ContactSection = () => {
                 focusedInput={focusedInput}
                 setFocusedInput={setFocusedInput}
                 errorMsg={errorMsg}
-                setErrorMsg={setErrorMsg}/>
+                setErrorMsg={setErrorMsg}
+                setIsButtonClicked={setIsButtonClicked}/>
             <Button 
               type="submit"
               form="contact-form"
               variant="light"
-              className="form-submit-button"
+              className={`form-submit-button ${isButtonClicked && 'animate__animated animate__rotateIn'}`}
               >Send Message
             </Button>
             <p className="error-message mt-2">{errorMsg}</p>

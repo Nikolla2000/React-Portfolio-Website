@@ -55,9 +55,9 @@ const Header = () => {
     }, [text]);
      
     return (
-        <section className="header-section" >
-            <div className={`header-wrapper animate__animated animate__fadeInDown`}>
-                <div className="heading">
+        <section className="header-section">
+            <div className="header-wrapper">
+                <div className="heading animate__animated animate__fadeInLeft">
                     <h1>Hi I'm <span>Nikola</span> Uzunov</h1>
                     <span className="sub-title">{text}</span>
                     <div className={`icons-wrapper ${fadeInLeftVisible && 'animate__animated animate__fadeInLeft'}`}>
@@ -66,8 +66,8 @@ const Header = () => {
                         ))}
                     </div>
                 </div>
-                <div className="img-wrapper">
-                    <img src="../../src/assets/images/copy.jpg" alt="Image of myself"/>
+                <div className="img-wrapper animate__animated animate__fadeInRight">
+                    <img src="../../src/assets/images/copy.jpg" alt="Image of myself" className="animate__animated animate__fadeInRight"/>
                 </div>
             </div>
         </section>
