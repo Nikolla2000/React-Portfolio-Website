@@ -6,7 +6,7 @@ const socialMediaData = [
         name: "Facebook",
         icon: faFacebookF,
         color: "#44659c",
-        link: "https://www.facebook.com"
+        link: "https://www.facebook.com/nikola.uzunov.18/"
     },
     {
         name: "Instagram",
@@ -22,7 +22,7 @@ const socialMediaData = [
         name: "Linkedin",
         icon: faLinkedinIn,
         color: "#0355e2",
-        link: "https://www.linkedin.com"
+        link: "https://www.linkedin.com/in/nikola-uzunov-620b73242/"
     },
 ]
 

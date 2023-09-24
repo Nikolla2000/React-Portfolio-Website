@@ -4,7 +4,7 @@ import { faFacebookF, faGithub, faLinkedinIn } from '@fortawesome/free-brands-sv
 const iconsData = [
     {
         icon: faFacebookF,
-        link: "https://www.facebook.com/"
+        link: "https://www.facebook.com/nikola.uzunov.18/"
     },
     {
         icon: faGithub,
@@ -12,7 +12,7 @@ const iconsData = [
     },
     {
         icon: faLinkedinIn,
-        link: "https://www.linkedin.com/"
+        link: "https://www.linkedin.com/in/nikola-uzunov-620b73242/"
     }
 ];
 
