@@ -25,7 +25,7 @@ app.use(cors({
 //routes
 app.use('/contacts', contactRouter)
 
-const start = async () => {
+const start = async (req,res) => {
   try {
     await connectDB(process.env.MONGO_URL);
     app.listen(port, () =>
