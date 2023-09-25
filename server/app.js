@@ -32,7 +32,8 @@ const start = async () => {
       console.log(`Server is listening on port ${port}...`)
     );
   } catch (error) {
-    console.log(error);
+    console.error(error);
+    res.status(500).json({ message: 'Internal server error' });
   }
 };
 
