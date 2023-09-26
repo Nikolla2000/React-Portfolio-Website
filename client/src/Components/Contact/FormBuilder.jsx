@@ -62,7 +62,7 @@ const FormBuilder = ({ configurations, setErrorMsg, setFocusedInput, setIsButton
     const handleSubmit = (event) => {
         event.preventDefault()
         if(validateForm()){
-            axios.post('http://localhost:3000/contacts/sendEmail', formData)
+            axios.post('https://mern-portfolio-enq5.onrender.com/contacts/sendEmail', formData)
             .then((res) => {
                 console.log(res.data);
                 setFormData({})
