@@ -5,7 +5,6 @@ import TagCloud from "TagCloud";
 const TextShpere = () => {
 
   useEffect(() => {
-    return () => {
       const container = ".tagcloud";
       const texts = [
         "HTML",
@@ -29,7 +28,6 @@ const TextShpere = () => {
       };
 
       TagCloud(container, texts, options);
-    };
   }, []);
 
   return (
