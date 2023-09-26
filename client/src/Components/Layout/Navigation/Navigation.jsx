@@ -12,10 +12,14 @@ const Navigation = () => {
     const navLinkClassName = showMobileMenu && location.pathname !== '/' ? 'white-links' : alternativeNavStyles ? "white-a" : "";
     const blackBars = showMobileMenu && location.pathname !== '/' ? 'black-bars' : ''
 
+    const handleLogoClick = () => {
+        if(location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+
     return (
         <nav className={alternativeNavStyles}>
             <div className='nav-wrapper'>
-                <Link to="/">
+                <Link to="/" onClick={handleLogoClick}>
                     <img src='/images/logo.svg'/>
                 </Link>
                 <div className={showMobileMenu ? "show-mobile-menu" : "nav-menu"}>
