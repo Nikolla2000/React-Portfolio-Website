@@ -16,7 +16,7 @@ const Navigation = () => {
         <nav className={alternativeNavStyles}>
             <div className='nav-wrapper'>
                 <Link to="/">
-                    <img src='../../../src/assets/images/logo.svg'/>
+                    <img src='/images/logo.svg'/>
                 </Link>
                 <div className={showMobileMenu ? "show-mobile-menu" : "nav-menu"}>
                     {Object.values(routes)

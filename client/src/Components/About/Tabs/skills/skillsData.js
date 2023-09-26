@@ -1,33 +1,33 @@
 const skillsData = [
     {
-        skillImg: "../../../src/assets/images/javascript.svg",
+        skillImg: "/images/javascript.svg",
         skillName: "Javascript",
         upperRow: true
     },
     {
-        skillImg: "../../../src/assets/images/html.png",
+        skillImg: "/images/html.png",
         skillName: "HTML",
         upperRow: true
     },
     {
-        skillImg: "../../../src/assets/images/css.png",
+        skillImg: "/images/css.png",
         skillName: "CSS",
         upperRow: true
     },
     {
-        skillImg: "../../../src/assets/images/react.png",
+        skillImg: "/images/react.png",
         skillName: "React"
     },
     {
-        skillImg: "../../../src/assets/images/node.png",
+        skillImg: "/images/node.png",
         skillName: "NodeJS"
     },
     {
-        skillImg: "../../../src/assets/images/express.png",
+        skillImg: "/images/express.png",
         skillName: "ExpressJS"
     },
     {
-        skillImg: "../../../src/assets/images/mongo.png",
+        skillImg: "/images/mongo.png",
         skillName: "MongoDB"
     }
 ]
@@ -35,36 +35,36 @@ const skillsData = [
 export const dividedSkillsData = [
     [
         {
-        skillImg: "../../../src/assets/images/javascript.svg",
+        skillImg: "/images/javascript.svg",
         skillName: "Javascript",
         upperRow: true
         },
         {
-            skillImg: "../../../src/assets/images/html.png",
+            skillImg: "/images/html.png",
             skillName: "HTML",
             upperRow: true
         },
         {
-            skillImg: "../../../src/assets/images/css.png",
+            skillImg: "/images/css.png",
             skillName: "CSS",
             upperRow: true
         },
     ],
     [
         {
-            skillImg: "../../../src/assets/images/react.png",
+            skillImg: "/images/react.png",
             skillName: "React"
         },
         {
-            skillImg: "../../../src/assets/images/node.png",
+            skillImg: "/images/node.png",
             skillName: "NodeJS"
         },
         {
-            skillImg: "../../../src/assets/images/express.png",
+            skillImg: "/images/express.png",
             skillName: "ExpressJS"
         },
         {
-            skillImg: "../../../src/assets/images/mongo.png",
+            skillImg: "/images/mongo.png",
             skillName: "MongoDB"
         }
     ]

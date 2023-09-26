@@ -24,15 +24,15 @@ const FormSection = () => {
                             <InfoItemComponent 
                                 infoName={"Residential Address"} 
                                 infoDetail={"Varna, Bulgaria"}
-                                infoIcon={"../../../src/assets/images/info-icon-1.png"}/>
+                                infoIcon={"/images/info-icon-1.png"}/>
                             <InfoItemComponent 
                                 infoName={"Official Email"} 
                                 infoDetail={"nikollа.uzunov@gmail.com"}
-                                infoIcon={"../../../src/assets/images/info-icon-2.png"}/>
+                                infoIcon={"/images/info-icon-2.png"}/>
                             <InfoItemComponent 
                                 infoName={"Official Phone"} 
                                 infoDetail={"+359-899-470-320"}
-                                infoIcon={"../../../src/assets/images/info-icon-3.png"}/>
+                                infoIcon={"/images/info-icon-3.png"}/>
                         </div>
                     </Col>
                 </Row>

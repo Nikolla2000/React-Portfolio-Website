@@ -1,7 +1,7 @@
 @import "../../index.scss";
 
 .contact-section-wrapper {
-    background-image: url("../../assets/images/background.jpg");
+    background-image: url("/images/background.jpg");
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     padding: 50px 0;
 
@@ -43,7 +43,7 @@
         }
     
         input, textarea {
-            background-image: url("../../assets/images/background.jpg");
+            background-image: url("/images/background.jpg");
             background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); 
             color: $primary-white;
             height: 50px;

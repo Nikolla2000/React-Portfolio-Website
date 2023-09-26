@@ -50,12 +50,12 @@ const ContactSection = () => {
   
 
   const formImage = focusedInput === 'email' ?
-  "../../src/assets/images/email.png"
+  "/images/email.png"
   : focusedInput === 'subject' ?
-  "../../src/assets/images/subject.png"
+  "/images/subject.png"
   : focusedInput === 'message' ?
-  "../../src/assets/images/message.png"
-  : "../../src/assets/images/default-contact-img.svg";
+  "/images/message.png"
+  : "/images/default-contact-img.svg";
 
   useEffect(()=> {
     if(focusedInput === 'email'){

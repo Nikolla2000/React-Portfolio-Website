@@ -10,7 +10,7 @@ const ProjectsSection = () => {
             <Container>
                 <Row>
                     {portfolioData.map((project) => (
-                        <Col key={project.imgPath}>
+                        <Col key={project.imgPath} lg={6} md={6} xs={12}>
                             <ProjectComponent data={project} />
                         </Col>
                     ))}

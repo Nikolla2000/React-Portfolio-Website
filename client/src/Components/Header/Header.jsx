@@ -67,7 +67,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="img-wrapper animate__animated animate__fadeInRight">
-                    <img src="../../src/assets/images/copy.jpg" alt="Image of myself" className="animate__animated animate__fadeInRight"/>
+                    <img src="/images/copy.jpg" alt="Image of myself" className="animate__animated animate__fadeInRight"/>
                 </div>
             </div>
         </section>

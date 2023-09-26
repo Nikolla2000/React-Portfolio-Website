@@ -9,13 +9,13 @@ const CertificatesTab = () => {
                 <Col lg={6}>
                     <a href="https://online.advanceacademy.bg/certificates?id=2859&file=41d529a5254b06d8c819afbbbfeaaf37"
                         target="_blank">
-                        <img src="../../../src/assets/images/certificate1.png" alt="certificate-image"/>
+                        <img src="/images/certificate1.png" alt="certificate-image"/>
                     </a>
                 </Col>
                 <Col lg={6}>
                     <a href="https://www.freecodecamp.org/certification/NikollaUzu/responsive-web-design"
                         target="_blank">
-                        <img src="../../../src/assets/images/certificate2.png" alt="certificate-image"/>
+                        <img src="/images/certificate2.png" alt="certificate-image"/>
                     </a>
                 </Col>
             </Row>
