@@ -10,11 +10,10 @@ const ProjectsSection = () => {
     const [portfolioData, setPortfolioData] = useState(null)
 
     useEffect(() => {
-        setTimeout(() => {
-            setPortfolioData(portfolioDataJS);
-            setIsLoading(false);
-        }, 1000);
+        setPortfolioData(portfolioDataJS);
+        setIsLoading(false);
     }, [])
+    
     return (
         <section className="all-projects-wrapper">
             <Container>
