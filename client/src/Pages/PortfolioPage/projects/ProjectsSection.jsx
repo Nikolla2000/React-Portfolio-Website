@@ -1,4 +1,4 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row, Spinner } from "react-bootstrap";
 import portfolioDataJS from "../../../Components/Portfolio/portfolioData";
 import ProjectComponent from "./ProjectComponent";
 import "./ProjectsSection.scss"
@@ -13,14 +13,17 @@ const ProjectsSection = () => {
         setTimeout(() => {
             setPortfolioData(portfolioDataJS);
             setIsLoading(false);
-        }, 2000);
+        }, 1000);
     }, [])
     return (
         <section className="all-projects-wrapper">
             <Container>
                 <Row>
                     {isLoading ? (
-                        <p>Loading...</p>
+                        <div className="text-center">
+                             <Spinner animation="grow" variant="primary" />
+                            <p className="loading-text">Loading...</p>
+                        </div>
                     ) : (
                         <>
                             {portfolioData.map((project) => (
