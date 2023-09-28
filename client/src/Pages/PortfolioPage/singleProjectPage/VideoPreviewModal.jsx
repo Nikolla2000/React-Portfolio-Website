@@ -9,10 +9,8 @@ const VideoPreviewModal = ({ video, show, setShow })  => {
   const handleClose = () => setShow(false);
 
   useEffect(() => {
-    setTimeout(() => {
       setProjectVideo(video)
       setIsLoading(false)
-    }, 1000)
   },[video])
 
   return (
