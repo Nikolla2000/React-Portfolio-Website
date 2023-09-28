@@ -24,9 +24,9 @@ const corsOptions = {
     'http://nikolauzunov.netlify.app'
   ],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // Enable credentials (e.g., cookies)
-  optionsSuccessStatus: 204, // Return a 204 status code for preflight requests
-  allowedHeaders: ['Content-Type', 'Authorization'], // Add any custom headers you need
+  credentials: true,
+  optionsSuccessStatus: 204,
+  allowedHeaders: ['Content-Type', 'Authorization'],
 };
 
 app.use(cors(corsOptions));
