@@ -18,12 +18,18 @@ app.use(express.static("./public"));
 app.use(express.json());
 
 //cors connection
-app.use(cors({
+const corsOptions = {
   origin: [
     'http://localhost:5173',
     'http://nikolauzunov.netlify.app'
-  ]
-}))
+  ],
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // Enable credentials (e.g., cookies)
+  optionsSuccessStatus: 204, // Return a 204 status code for preflight requests
+  allowedHeaders: ['Content-Type', 'Authorization'], // Add any custom headers you need
+};
+
+app.use(cors(corsOptions));
 
 //routes
 app.use('/contacts', contactRouter)
