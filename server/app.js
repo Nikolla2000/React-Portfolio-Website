@@ -19,7 +19,10 @@ app.use(express.json());
 
 //cors connection
 app.use(cors({
-  origin: 'http://localhost:5173'
+  origin: [
+    'http://localhost:5173',
+    'http://nikolauzunov.netlify.app'
+  ]
 }))
 
 //routes
