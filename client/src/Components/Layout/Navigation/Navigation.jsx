@@ -30,7 +30,6 @@ const Navigation = () => {
                             key={index + 1}
                             to={element.path}
                             className={navLinkClassName}
-                            activeClassName="active"
                         >
                             {element.name}
                         </NavLink>

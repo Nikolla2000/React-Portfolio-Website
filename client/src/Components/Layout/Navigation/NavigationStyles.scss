@@ -1,36 +1,32 @@
 @import "../../../index.scss";
 
 nav {
-    background-color: rgba($color: #000000, $alpha: 0.2);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   
-    .nav-wrapper {
-      display: flex;
+  .nav-wrapper {
+    display: flex;
       justify-content: space-between;
       margin: 5px 60px;
       align-items: center;
-  
+      
       img {
         height: 80px;
         padding: 10px 0;
       }
-  
+      
       .nav-menu,
       .show-mobile-menu {
         display: flex;
         gap: 25px;
         margin-bottom: 0px;
         align-items: center;
-  
-        .active {
-          color: $third-red;
-          font-weight: bolder;
-        }
-  
+        
+        
         a {
           text-decoration: none;
           color: $primary-white;
@@ -41,7 +37,7 @@ nav {
           &:hover:not(:last-of-type){
             transform: scale(1.2)
           }
-
+          
           &:nth-of-type(4) {
             margin-left:30px;
           }
@@ -49,7 +45,7 @@ nav {
           &:last-of-type {
             border: 1px solid $primary-white;
             padding: 6px 20px;
-
+            
             &:hover {
               color:$primary-red;
               border-color: $primary-red;
@@ -58,8 +54,12 @@ nav {
         }
       }
     }
-  
-
+    
+    .active {
+      color: green;
+      font-weight: bolder;
+    }
+    
     //Nav styles when not on home page
     .white-nav {
       background-color: $primary-white;
@@ -71,14 +71,14 @@ nav {
       font-weight: bolder !important;
       border-color: $primary-black !important; 
     }
-
+    
     .active {
       color: $third-red !important;
       font-weight: bolder;
       border-color: $third-red !important; 
     }
 
-
+    
     .mobile-menu-btn {
       color: $primary-white;
       font-size: 2rem;
