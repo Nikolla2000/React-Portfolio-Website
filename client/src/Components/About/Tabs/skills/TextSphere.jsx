@@ -11,6 +11,7 @@ const TextShpere = () => {
         "CSS",
         "SASS",
         "JavaScript",
+        "TypeScript",
         "React",
         "NodeJS",
         "ExpressJS",
