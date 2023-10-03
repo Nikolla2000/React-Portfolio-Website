@@ -1,9 +1,13 @@
 import { Outlet, useNavigation } from "react-router"
 import Navigation from "../Components/Layout/Navigation/Navigation"
 import "./RootLayout.scss"
+import { useState } from "react"
+import Chatbot from "../Components/Chatbot/Chatbot"
 
 const RootLayout = () => {
+    const [showChatBot, setShowChatBot] = useState(false)
     const navigation  = useNavigation()
+
     return (
         <>
         <Navigation />
@@ -12,6 +16,12 @@ const RootLayout = () => {
                 <h2 className="loading-msg">Loading...</h2>
             )}
             <Outlet />
+            <div 
+                className="show-chat-btn"
+                onClick={() => setShowChatBot(!showChatBot)}>
+                Show Chat
+            </div>
+            {showChatBot && <Chatbot/>}
         </main>
         </>
     )
