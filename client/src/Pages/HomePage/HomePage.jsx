@@ -1,4 +1,5 @@
 import AboutSection from "../../Components/About/AboutSection"
+import Chatbot from "../../Components/Chatbot/Chatbot"
 import ContactSection from "../../Components/Contact/ContactSection"
 import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
@@ -12,6 +13,7 @@ const HomePage = () => {
             {/* <PortfolioSection/> */}
             <ContactSection/>
             <Footer/>
+            <Chatbot/>
         </div>
     )
 }
