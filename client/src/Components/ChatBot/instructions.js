@@ -17,7 +17,7 @@ const instructions = [
   },
 {
   id: 'help-no',
-  message: "Alright then, goodbye! If you need assistance later, feel free to ask.",
+  message: "Alright then! If you need assistance later, feel free to ask. Goodbye!",
 },
 ];
 

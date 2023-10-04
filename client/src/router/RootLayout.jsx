@@ -1,5 +1,7 @@
 import { Outlet, useNavigation } from "react-router"
 import Navigation from "../Components/Layout/Navigation/Navigation"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMessage } from '@fortawesome/free-solid-svg-icons';
 import "./RootLayout.scss"
 import { useState } from "react"
 import Chatbot from "../Components/Chatbot/Chatbot"
@@ -19,7 +21,7 @@ const RootLayout = () => {
             <div 
                 className="show-chat-btn"
                 onClick={() => setShowChatBot(!showChatBot)}>
-                Show Chat
+                <FontAwesomeIcon icon={faMessage} />
             </div>
             {showChatBot && <Chatbot/>}
         </main>
