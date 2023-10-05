@@ -4,4 +4,25 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .show-chat-btn {
+    position: fixed;
+    padding: 20px 22px;
+    display: inline-block;
+    background-color: rgb(18, 101, 255);
+    z-index: 1000;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(94, 150, 255);
+    }
+
+    svg {
+      color:#fff;
+      font-size: 1.5em;
+    }
+  }
   
