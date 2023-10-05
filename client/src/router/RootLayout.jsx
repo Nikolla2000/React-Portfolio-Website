@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMessage } from '@fortawesome/free-solid-svg-icons';
 import "./RootLayout.scss"
 import { useState } from "react"
-import Chatbot from "../Components/Chatbot/Chatbot"
+// import Chatbot from "../Components/Chatbot/Chatbot"
 
 const RootLayout = () => {
     const [showChatBot, setShowChatBot] = useState(false)
@@ -18,12 +18,12 @@ const RootLayout = () => {
                 <h2 className="loading-msg">Loading...</h2>
             )}
             <Outlet />
-            <div 
+            {/* <div 
                 className="show-chat-btn"
                 onClick={() => setShowChatBot(!showChatBot)}>
                 <FontAwesomeIcon icon={faMessage} />
-            </div>
-            {showChatBot && <Chatbot/>}
+            </div> */}
+            {/* {showChatBot && <Chatbot/>} */}
         </main>
         </>
     )
