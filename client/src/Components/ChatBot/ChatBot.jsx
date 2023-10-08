@@ -5,14 +5,13 @@ import CloseIcon from '@mui/icons-material/Close';
 import "./ChatBotStyles.scss"
 
 
-const Chat = () => {
-  const [closeChat, setCloseChat] = useState(false)
+const Chat = ({ show, setShow }) => {
   
   return (
-    <div className={`chatbot-wrapper ${closeChat && 'remove'}`}>
+    <div className={`chatbot-wrapper ${!show && 'remove'}`}>
       <ChatBot
         steps={instructions}/>
-        <CloseIcon onClick={() => setCloseChat(true)}/>
+        <CloseIcon onClick={() => setShow(false)}/>
     </div>
   );
 };

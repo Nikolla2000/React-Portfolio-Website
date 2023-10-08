@@ -19,12 +19,12 @@ const RootLayout = () => {
                 <h2 className="loading-msg">Loading...</h2>
             )}
             <Outlet />
-            <div 
+            {!showChatBot && <div 
                 className="show-chat-btn"
                 onClick={() => setShowChatBot(!showChatBot)}>
                 <FontAwesomeIcon icon={faMessage} />
-            </div>
-            {showChatBot && <Chat/>}
+            </div>}
+            {showChatBot && <Chat show={showChatBot} setShow={setShowChatBot}/>}
         </main>
         </>
     )
