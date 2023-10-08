@@ -25,4 +25,14 @@
       font-size: 1.5em;
     }
   }
+
+  @media screen and (max-width: 1000px) {
+    .show-chat-btn {
+      padding: 15px 17px;
+    }
+    .chatbot-wrapper {
+      height: 450px !important;
+      width: 300px;
+    }
+  }
   
