@@ -18,13 +18,23 @@ const instructions = [
   {
     id: 'ask-help',
     options: [
-      { value: 'Yes', label: 'Yes', trigger: 'yes-response' },
+      { value: 'Yes', label: 'Yes', trigger: 'ask-name' },
       { value: 'No', label: 'No, thanks', trigger: 'help-no' },
     ],
   },
   {
+    id: 'ask-name',
+    message:'Great, what is your name?',
+    trigger: 'name'
+  },
+  {
+    id: 'name',
+    user: true,
+    trigger: 'yes-response'
+  },
+  {
     id: 'yes-response',
-    message: "Great, how can I help you?",
+    message: "Nice to meet you {previousValue}! How can I help you?",
     trigger: 'yes-follow-up'
   },
   {
