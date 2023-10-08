@@ -29,10 +29,13 @@
   @media screen and (max-width: 1000px) {
     .show-chat-btn {
       padding: 15px 17px;
+      bottom: 70px;
+      right: 50px;
     }
     .chatbot-wrapper {
-      height: 450px !important;
+      height: 600px !important;
       width: 300px;
+      right: 50px !important;
     }
   }
   
