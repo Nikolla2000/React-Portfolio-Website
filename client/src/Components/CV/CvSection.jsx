@@ -8,7 +8,7 @@ const CvSection = () => {
                 <Row>
                     <Col lg={6} md={6}>
                         <div className="cv-image-wrapper">
-                            <img src="/images/cv.png" alt="My Resume"/>
+                            <img src="/images/cv-2.png" alt="My Resume"/>
                         </div>
                     </Col>
                     <Col lg={6} md={6}>
