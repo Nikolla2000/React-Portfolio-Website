@@ -18,7 +18,8 @@ const TextShpere = () => {
         "MongoDB",
         "GIT",
         "GitHub",
-        "ES6",
+        "Redux",
+        "Tailwind"
       ];
 
       const options = {
