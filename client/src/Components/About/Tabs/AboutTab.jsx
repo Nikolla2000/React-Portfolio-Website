@@ -42,8 +42,8 @@ const AboutTab = () => {
                     </Col>
                     <Col>
                     <h1 className='about-heading'>I create products not just art</h1>
-                    <p>My name is Nikola Uzunov and I'm 23 years-old based in Varna, Bulgaria.I'm taking my first steps
-                        as a web developer. My primary focus is into frontend development. My appetite for growth and improvement drives me to explore this field further. 
+                    <p>My name is Nikola Uzunov and I'm 23 years-old based in Varna, Bulgaria. I have 1+ year of experience, focusing on the MERN stack.
+                        My primary focus is into frontend development. My appetite for growth and improvement drives me to explore this field further. 
                         Let's connect and create amazing digital experiences together!
                     </p>
                     <Button className={`lets-talk-btn ${isButtonClicked && 'animate__animated animate__rotateIn'}`}
