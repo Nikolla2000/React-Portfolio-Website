@@ -40,7 +40,7 @@ const SingleProjectPage = () => {
                                     <Button onClick={() => setShowVideoModal(true)}>
                                     Watch Video Preview
                                     </Button>}
-                                {isHovered && 
+                                {isHovered && projectData.id === 1 && 
                                     <Button className="live-preview-btn" onClick={() => viewLivePreview(projectData.livePreviewLink)}>
                                     Live Preview
                                     </Button>}
