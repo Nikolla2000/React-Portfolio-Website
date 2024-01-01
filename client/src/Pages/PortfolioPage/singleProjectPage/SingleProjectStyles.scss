@@ -20,13 +20,17 @@
         font-weight: bold;
     }
     .project-img-wrapper {
+        display: flex;
+        align-items: center;
         max-width: 600px;
+        height: 400px;
         margin:0 auto;
         border:6px solid $primary-white;
         position: relative;
         
         img {
             width: 100%;
+            height: 100%;
             transition: filter 0.3s ease;
         }
         
@@ -155,12 +159,14 @@
 
 @media screen  and (max-width:600px){
     .project-img-wrapper {
-        width: 80%;
+        width: 350px;
+        height: 250px !important;
         button {
             // width: 20px;
             font-size: 0.7em;
             left:27% !important;
         }
+        .live-preview-btn { top: 60% !important; left: 35% !important;}
 
     }
 }
