@@ -23,7 +23,8 @@ const portfolioData = [
               "The website is designed to be responsive, ensuring an appealing and functional experience across different devices."
           },
         video: true,
-        link: "https://github.com/advanceacademy/bootcamp-js-june-23"
+        link: "https://github.com/advanceacademy/bootcamp-js-june-23",
+        livePreviewLink: "https://danielenchev48.github.io/ElixirRestaurant/"
     },
     {
         id:2,

@@ -40,13 +40,18 @@
             padding: 12px 25px;
             border: none;
             position: absolute;
-            top:45%;
+            top:40%;
             left: 35%;
             transition: 0.3s ease;
             
             &:hover {
                 background: linear-gradient(108.4deg, rgb(232, 128, 133) 3.3%, rgb(192, 67, 73) 98.4%);
             }
+        }
+        .live-preview-btn {
+            top:55%;
+            left:39%;
+            font-weight: bold;
         }
 
     }

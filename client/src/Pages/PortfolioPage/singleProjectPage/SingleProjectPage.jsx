@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import portfolioData from "../../../Components/Portfolio/portfolioData";
 import { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
@@ -17,6 +17,11 @@ const SingleProjectPage = () => {
     useEffect(() => {
         setProjectData(portfolioData.find((project) => projectId == project.id))
     }, [projectId])
+
+    const viewLivePreview = (url) => {
+        const newTab = window.open(url, '_blank');
+        newTab.focus();
+    }
     
     return (
         <>
@@ -34,6 +39,10 @@ const SingleProjectPage = () => {
                                 {isHovered && 
                                     <Button onClick={() => setShowVideoModal(true)}>
                                     Watch Video Preview
+                                    </Button>}
+                                {isHovered && 
+                                    <Button className="live-preview-btn" onClick={() => viewLivePreview(projectData.livePreviewLink)}>
+                                    Live Preview
                                     </Button>}
                         </div>
                                         {showVideoModal && <VideoPreviewModal video={projectData.videoPath}
