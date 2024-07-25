@@ -6,7 +6,7 @@ const portfolioData = [
         videoPath: "/images/projects/pizzeria-video.mp4",
         title: "Fullstack Pizzeria Website",
         description: "Pizzeria Website for which I contributed in a team in a Javascript Bootcamp",
-        detailedDescription: "The Fullstack Pizzeria Website is a collaborative effort created during a Javascript Bootcamp. This dynamic and user-friendly website serves as an online platform for a fictional pizzeria, showcasing the team's proficiency in web development. It features an interactive menu, online ordering, real-time order tracking, sending a contact emails and a seamless user experience. The project highlights the use of modern web technologies and teamwork in building a comprehensive web application. It's using React for the frontend and ExpressJS for the backend. Explore the codebase on GitHub to see how we brought this delightful pizzeria experience to life.",
+        detailedDescription: "The Fullstack Pizzeria Website is a collaborative effort created during a Javascript Bootcamp. This dynamic website serves as an online platform for a fictional pizzeria, showcasing the team's proficiency in web development. It features an interactive menu, online ordering, real-time order tracking, sending a contact emails and a seamless user experience. The project highlights the use of modern web technologies and teamwork in building a comprehensive web application. It's using React for the frontend and ExpressJS for the backend. Explore the codebase on GitHub to see how we brought this delightful pizzeria experience to life.",
         skillsDemonstrated: "This project demonstrates the skills and knowledge acquired during the bootcamp, including HTML, CSS, JavaScript, React, NodeJS and teamwork in a collaborative development environment.",
         keyFeatures: {
             "Interactive Menu":
@@ -91,6 +91,46 @@ const portfolioData = [
         },
         link: "https://github.com/Nikolla2000/Calculator-Vanilla-JS"
     },
+  //   {
+  //     id: 5,
+  //     imgPath: "/images/project5.png", // Replace with actual path to an image
+  //     alternateImgPath: "/images/project5-alt.png", // Optional alternate image path
+  //     videoPath: "/images/projects/web3-voting-system-video.mp4", // Optional video path
+  //     title: "Web3 Voting System",
+  //     description: "Decentralized voting system using Next.js, NestJS, and Solidity.",
+  //     detailedDescription: "The Web3 Voting System is a decentralized application that allows users to cast votes on various topics, ensuring the integrity and immutability of the voting process through Smart Contracts deployed on the Ethereum blockchain. It is built with Next.js for the frontend, NestJS for the backend, Solidity for the Smart Contract and leverages Web3.js to interact with the blockchain.",
+  //     keyFeatures: {
+  //         "Decentralized Voting": "Ensures integrity and immutability of votes using blockchain technology.",
+  //         "Smart Contracts": "Implements voting logic through Smart Contract written by myself in the Solidity language.",
+  //         "Web3 Integration": "Utilizes Web3.js to interact with smart contracts and the Ethereum network.",
+  //         "User Authentication": "Implemented user authentication and authorization using next-auth."
+  //         "Secure and Transparent": "Provides a transparent and tamper-proof voting process.",
+  //         "User-Friendly Interface": "Features a clean and intuitive interface for casting and viewing votes.",
+  //     },
+  //     // video: true,
+  //     link: "https://github.com/Nikolla2000/Web3-Voting-System"
+  // },
+  //   {
+  //     id: ,
+  //     imgPath: "/images/project5.png", // Replace with actual path to an image
+  //     alternateImgPath: "/images/project5-alt.png", // Optional alternate image path
+  //     videoPath: "/images/projects/web3-voting-system-video.mp4", // Optional video path
+  //     title: "Online Casino",
+  //     description: "Online Casino with simulative games",
+  //     detailedDescription: "This Online Casino was made with React for the frontend and ExpressJs for the Backend. It features fun and interactive games",
+  //     keyFeatures: {
+  //         "User Authentication": "Implemented user authentication and authorization using passport and jsonwebtoken."
+  //         "Smart Contracts": "Implements voting logic through Solidity smart contracts deployed on Ethereum.",
+  //         "Web3 Integration": "Utilizes Web3.js to interact with smart contracts and the Ethereum network.",
+  //         "Secure and Transparent": "Provides a transparent and tamper-proof voting process.",
+  //         "Dynamic Interface": "Features a minimalistic, yet very fun and dynamic interface filled with animations and videos.",
+  //         "Next.js Frontend": "Leverages Next.js for a performant and modern frontend experience.",
+  //         "NestJS Backend": "Uses NestJS to manage server-side logic and API endpoints."
+  //     },
+          //tech stack: react,
+  //     // video: true,
+  //     link: "https://github.com/Nikolla2000/Web3-Voting-System"
+  // }
 ];
 
 export default portfolioData
