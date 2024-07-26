@@ -98,7 +98,7 @@ const portfolioData = [
   //     videoPath: "/images/projects/web3-voting-system-video.mp4", // Optional video path
   //     title: "Web3 Voting System",
   //     description: "Decentralized voting system using Next.js, NestJS, and Solidity.",
-  //     detailedDescription: "The Web3 Voting System is a decentralized application that allows users to cast votes on various topics, ensuring the integrity and immutability of the voting process through Smart Contracts deployed on the Ethereum blockchain. It is built with Next.js for the frontend, NestJS for the backend, Solidity for the Smart Contract and leverages Web3.js to interact with the blockchain.",
+  //     detailedDescription: "This is a decentralized application that allows users to cast votes on various topics, ensuring the integrity and immutability of the voting process through Smart Contracts deployed on the Ethereum blockchain. This project was a chance for me to make my first steps in Blockchain Development and to learn and experiment with some Javascript frameworks - Next.js and NestJs. Next.js was used for the frontend, NestJS for the backend, Solidity for the Smart Contract and Web3.js library to interact with the blockchain and the contract.",
   //     keyFeatures: {
   //         "Decentralized Voting": "Ensures integrity and immutability of votes using blockchain technology.",
   //         "Smart Contracts": "Implements voting logic through Smart Contract written by myself in the Solidity language.",
